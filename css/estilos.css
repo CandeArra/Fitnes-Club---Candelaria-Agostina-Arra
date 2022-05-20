@@ -1,0 +1,1553 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Inconsolata&family=Lato&family=Montserrat:ital,wght@1,200&family=Ms+Madi&family=Mukta:wght@300&family=Orelega+One&family=Oswald&family=Rajdhani:wght@600&family=Sen&family=Square+Peg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+body {
+    background: linear-gradient(to right, #d53369, #be2a04);  
+    height: 100vh;
+}
+
+/*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+    grid-template-rows: auto;
+    grid-template-columns:  1fr ;
+    
+    height: 100%;
+    width: 100%;
+}
+
+/*header*/
+
+.cabecera {
+    grid-area: header; 
+    background-color:#000000;
+    border-bottom: solid 4px #af0e2f;
+}
+
+
+/*navegacion*/
+.nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.titulos__container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*logo*/
+.nav__link--logo{
+    padding: 10px;
+    margin-right:30px;
+    width:105px;
+    border: solid 3px #ffffff;
+    border-radius: 50%;
+    background: linear-gradient(to right, #af0206, #761161); 
+}
+
+/*nombre del gym*/
+.nav__titulo {
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+span{
+    color: #af0e2f;
+    animation-name: spanTitulo;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+/*cambia constantemente los colores del nombre del gimnasio*/
+@keyframes spanTitulo {
+    0% {
+        color: #af0e2f;
+    }
+
+    50% {
+        color: #761161;
+    }
+
+    100% {
+        color: #af0e2f;
+    }
+}
+
+/*secciones de el sitio web*/
+.ul__container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.ul__container__a {
+    margin: 5px; 
+    padding-right: 30px;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow:  2px 2px #af0e2f;
+}
+
+nav ul li a:hover{
+    color: #af0e2f;
+    text-shadow: none;
+} 
+/*termina header y nav del index*/
+
+/*main*/
+.container {
+    grid-area: main;
+    background-image: url("../assets/img/Index/imgfondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 4px #af0e2f;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container__section {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container__section h1  {
+    font-size: 90px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: oblique;
+    letter-spacing: 12px;
+    text-shadow:  2px 2px #af0e2f;
+    color:#000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.container__section h2 {
+    font-size: 65px;
+    text-shadow:  2px 2px #af0e2f;
+    font-family: 'Bebas Neue', cursive;
+    font-style: oblique;
+    letter-spacing: 12px;
+    padding: 20px;
+    color:#000000;
+    text-align: center;
+}
+
+.container__section__boton {
+    font-size: 30px;
+    background-color:#af0e2f;
+    color: #ffffff;
+    text-shadow:  3px 2px #000000;
+    border:  solid 3px #000000;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 4px;
+    padding:30px;
+    transition:all 0.5s;
+}    
+
+/*aplica transformaciones al boton Contactanos*/
+.container__section__boton:hover{
+    background-color:#c2040b;
+    transform: scale(1.1);
+}
+
+/*logos de redes sociales*/
+.logos-redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%; 
+    flex-wrap: wrap; 
+} 
+
+.fa-brands {
+    color: #000000;
+    text-shadow: 2px 2px #fff;
+    font-size:80px;
+    margin: 20px; 
+    animation-name: logos-redes;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+} 
+
+.fa-brands:hover {
+    text-shadow: 2px 2px #000;
+}
+
+/*animacion de redes sociales: cambio de color*/
+@keyframes logos-redes {
+    0% {
+        color:#000
+    }
+
+    25% {
+        color: #af0e2f;
+    }
+
+    50% {
+        color: #761161;
+    }
+
+    75% {
+        color: #af0e2f;
+    }
+
+    100% {
+        color:#000
+    }
+}
+
+/*termina main del index*/
+
+/*footer*/
+.container__footer {
+    grid-area: footer;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
+
+.container__footer div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.container__footer--derechos {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.email, .tel {
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer__titulo{
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*termina footer del index*/
+
+/*@media queries*/
+@media screen and (max-width: 1300px) {
+    
+    .titulos__container{
+        justify-content:center;
+    }
+
+    .nav__link--logo{
+        width:80px;
+    }
+    
+    .nav__titulo {
+        font-size: 40px;
+    }
+
+    .ul__container__a {
+        font-size: 1.5rem;
+        color: #ffffff;
+    }
+
+    .container__section h1  {
+        font-size: 70px;
+    }
+    
+    .container__section h2 {
+        font-size: 40px;
+    } 
+
+    .container__footer--derechos {
+        font-size: 14px;
+    }
+       
+    .email, .tel {
+        font-size: 14px;
+    }
+    
+    .footer__titulo{
+        font-size: 40px;
+    }
+
+}
+
+/*vista de tablet*/
+@media screen and (max-width: 700px) {
+        
+    .nav {
+        justify-content: center;
+    }
+
+    .nav__link--logo{
+        padding: 10px;
+        width:70px;
+    }
+
+    .ul__container {
+        justify-content: center;
+    }
+
+    .container__section h1  {
+        font-size: 55px;
+        text-shadow:  2px 1px #af0e2f;
+    }
+    
+    .container__section h2 {
+        font-size: 35px;
+        text-shadow:  2px 1px #af0e2f;
+    }
+
+    .container__section__boton {
+        margin-top: 30px;
+    }    
+
+    .container__footer--derechos {
+        font-size: 13px;
+    }
+    
+    .email, .tel {
+        font-size: 13px;
+    }
+    
+    .footer__titulo{
+        font-size: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 532px) {
+
+    .ul__container__a {
+        font-size: 1.1rem;
+    }
+
+    .container__footer--derechos {
+        font-size: 11px;
+    }
+    
+    .email, .tel {
+        font-size: 11px;
+    }
+    
+    .footer__titulo{
+        font-size: 30px;
+    }
+
+}
+
+/*vista mobile*/
+@media screen and (max-width: 400px) {
+
+    .nav__link--logo{
+        padding: 4px;
+        width:55px;
+    }
+    
+    .nav__titulo {
+        font-size: 30px;
+    }
+
+    .ul__container__a {
+        font-size: 1.2rem;
+    }
+
+    .container__section h1  {
+        font-size: 50px;
+        padding: 0px;
+    }
+    
+    .container__section h2 {
+        font-size: 28px;
+        text-shadow:  1px 1px #af0e2f;
+        letter-spacing: 7px;
+    }
+    
+    .container__section__boton {
+        font-size: 20px;
+    }    
+    
+    .fa-brands {
+        font-size:55px;
+    } 
+    
+    .container__footer--derechos {
+        font-size: 11px;
+    }
+    
+    .email, .tel {
+        font-size: 10px;
+    }
+    
+    .footer__titulo{
+        font-size: 30px;
+    }
+    
+}
+/*termina seccion index*/
+
+/*empieza la seccion actividades*/
+.grid-actividades {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "footer";
+
+    grid-template-rows: auto;
+    grid-template-columns:  1fr ;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.nav--actividades{
+    padding: 20px;
+}
+
+.section1 {
+    display: flex;
+    flex-wrap:wrap ;
+    margin: 15px 0;
+    grid-area: section1;
+}
+
+.primera__section__acti {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap:wrap ;
+}
+
+.primera__section__acti h1 {
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 12px;
+    color:#000;
+    text-shadow:  2px 2px #ffffff;
+    font-weight: bold;
+    padding:20px ;
+}
+
+.primera__section__acti ul {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap:wrap ;
+    align-items: flex-start;
+}
+
+.primera__section__acti ul li {
+    font-size: 25px;
+    list-style:circle;
+    font-family: 'Rajdhani', sans-serif;
+    color:#ffffff;
+    padding:5px ;
+    margin: 7px ;
+}
+
+/*IMAGENES*/
+#container__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    width: 60%;
+    gap: 20px;
+}
+
+.primera__section__img {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.primera__section__img h2{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 12px;
+    margin-top: 10px;
+}
+
+.primera__section__img img {
+    width: 100%;
+    border: 3px solid #000;
+}
+
+/*SECCION 2 DEL MAIN*/
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: 4px solid #af0e2f;
+    grid-area: section2;
+}
+
+.section2__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.section2__div h2{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 12px;
+    font-family: 'Fjalla One', sans-serif;
+    color:#000000;
+    text-shadow:  2px 1px #ffffff;
+    text-align: center;
+}
+
+.section2__div h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    color:#000000;
+    text-shadow:  1px 1px #ffffff;
+    text-align: center;
+}
+
+.section2__div--boton {
+    font-size: 30px;
+    background-color:black;
+    color: #ffffff;
+    border:  solid 3px #fff;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 30px;
+    transition: all 0.5s;
+}
+
+/*cambia tamaño de letra, color y la convierte en negrita*/
+.section2__div--boton:hover{
+    transform: scale(1.2);
+    color: #af0e2f;
+    font-weight: bold;
+}
+
+.section2__div--video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#video {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+video {
+    width: 90%;
+    border: 3px solid #000000;
+}
+
+#p {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#p p {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 12px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: oblique;
+    text-shadow:  2px 4px #ffffff;
+    color:#000000;
+}
+
+.footer--actividades {
+    padding: 20px;
+}
+
+.container__footer div {
+    margin:5px;
+}
+/*footer*/
+
+/*media queries de actividades*/
+@media screen and (max-width: 1300px) {
+
+    .primera__section__img {
+        width: 42%;
+    }
+
+    .section2__div h2{
+        font-size: 45px;
+    }
+
+    #p p {
+        font-size: 55px;
+        text-shadow:  2px 1px #ffffff;
+    }
+
+    .fa-brands {
+        font-size:70px;
+    } 
+
+}
+
+@media screen and (max-width: 1202px) {
+    .primera__section__img {
+        width:45%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .primera__section__img {
+        width:47%;
+    }
+
+    .primera__section__acti h1 {
+        font-size: 30px;
+    }
+
+    .primera__section__acti ul li {
+        font-size: 25px;
+    }
+
+    .section2__div h2{
+        font-size: 30px;
+    }
+    
+    .section2__div h3{
+        font-size:25px;
+    }
+    
+    .section2__div--boton {
+        font-size: 20px;
+    }
+
+    #p p {
+        font-size: 45px;
+        text-shadow:  2px 1px #ffffff;
+    }
+
+    .fa-brands {
+        font-size:60px;
+    } 
+
+    .title {
+        font-size: 38px;
+    }
+
+}
+
+/*vista tablet de seccion actividades*/
+@media screen and (max-width: 700px) {
+
+    .primera__section__img {
+        width:50%;
+    }
+    .primera__section__img h2{
+        font-size: 18px;
+    }
+
+    .primera__section__acti h1 {
+        font-size:19px;
+        text-shadow: 1px 1px #ffffff;
+    }
+
+    .primera__section__acti ul li {
+        font-size: 16px;
+    }
+
+    .section2__div h2{
+        font-size: 28px;
+        text-shadow: 1px 1px #ffffff;
+        letter-spacing: 9px;
+    }
+    
+    .section2__div h3{
+        font-size:24px;
+        text-shadow:1px 1px #ffffff;
+    }
+    
+    .section2__div--boton {
+        font-size: 20px;
+    }
+
+    #p p {
+        font-size: 28px;
+        text-shadow:  1px 1px #ffffff;
+        font-style:normal;
+        letter-spacing: 9px;
+    }
+    
+    .fa-brands {
+        font-size:45px;
+    } 
+}
+
+/*vista mobile seccion actividades*/
+@media screen and (max-width: 380px) {
+
+    .primera__section__img {
+        width:49%;
+    }
+    .primera__section__img h2{
+        font-size: 19px;
+        letter-spacing: 6px;
+    }
+
+    .primera__section__acti h1 {
+        font-size:18px;
+        letter-spacing: 8px;
+    }
+
+    .primera__section__acti ul li {
+        font-size: 15px;
+    }
+
+    .section2__div h2{
+        letter-spacing: 3px;
+        font-size: 20px;
+
+    }
+    
+    .section2__div h3{
+        font-size:17px;
+    }
+    
+    .section2__div--boton {
+        font-size: 14px;
+        padding: 20px;
+        border: 2px solid #fff;
+    }
+
+    #p p {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+    
+    .fa-brands {
+        font-size:35px;
+    } 
+
+    .title {
+        font-size: 25px;
+    }
+
+}
+/*termina actividades*/
+
+/*seccion sedes*/
+.grid-sedes {
+    grid-template-areas: 
+    "header"
+    "section"
+    "article"
+    "footer";
+}
+
+.nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.nav--sedes {
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.titulo--sedes {
+    text-align: center;
+    margin: 40px 0 ;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow:  2px 1px #fff;
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.sec {
+    grid-area: section;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    height: 300px;
+    margin: 50px 40px ;    
+    background: linear-gradient(to bottom, #321b5f, #87021f); 
+    border: 4px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card:hover{
+    background: linear-gradient(to bottom, #322056, #89243a); 
+}
+
+.card h3, .card h4, .card h5 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.card h3 {
+    font-size: 40px;
+}
+
+.card h4 {
+    font-size: 30px;
+}
+
+.card h5{
+    font-size: 20px;
+}
+
+article {
+    grid-area: article;
+    border-bottom: 4px solid #af0e2f;
+}
+
+article h2 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    text-shadow:  2px 1px #fff;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.article__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#img {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#img img {
+    width:80%;
+}
+
+#parrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+#parrafo p {
+    font-size:2rem;
+    width: 90%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    border: 2px solid #000000;
+    background-color: #000000;
+    padding:30px;
+}
+
+.footer--sedes {
+    padding: 20px;
+}
+
+/*media queries de sedes*/
+@media screen and (max-width: 1340px) {
+
+    .nav__titulo {
+        font-size: 50px;
+    }
+
+    .ul__container__a {
+        font-size: 1.7rem;
+    }
+
+    .titulo--sedes {
+        font-size: 50px;
+    }
+
+    .card{
+        width: 300px;
+        height: 200px;
+    }
+
+    .card h3 {
+        font-size: 35px;
+    }
+    
+    .card h4 {
+        font-size: 20px;
+    }
+    
+    .card h5{
+        font-size: 15px;
+    }
+
+    .card h3, .card h4, .card h5 {
+        margin: 10px 0;
+    }
+
+    article h2 {
+        font-size: 40px;
+    }
+
+    #parrafo p {
+        font-size:1.8rem;
+    }
+
+    .fa-brands {
+        font-size:70px;
+    }  
+}
+
+@media screen and (max-width: 1000px) {
+
+    .nav--sedes{
+        justify-content:center;
+    }
+
+    .titulo--sedes {
+        font-size: 40px;
+    }
+    #parrafo p {
+        font-size:1.6rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .nav__titulo {
+        font-size: 45px;
+    }
+
+    .ul__container__a {
+        font-size: 1.5rem;
+    }
+
+    .titulo--sedes {
+        font-size: 35px;
+        text-shadow:  1px 1px #fff;
+    }
+
+    .card{
+        width: 280px;
+        height: 180px;
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+    
+    .card h4 {
+        font-size: 15px;
+    }
+    
+    .card h5{
+        font-size: 10px;
+    }
+
+    .card h3, .card h4, .card h5 {
+        margin: 5px 0;
+    }
+
+    #parrafo p {
+        font-size:1.4rem;
+    }
+        
+    article h2 {
+        margin: 30px 0;
+    }
+
+    .fa-brands {
+        font-size:60px;
+    }  
+
+    .footer__titulo--sedes {
+        font-size:45px;
+    }
+
+}
+
+/*vista tablet seccion sedes*/
+@media screen and (max-width: 700px) {
+
+    .titulo--sedes {
+        font-size: 30px;
+        margin: 30px 0px;
+        letter-spacing:2px;
+        text-shadow:  1px 1px #fff;
+    }
+
+    .card{
+        width: 220px;
+        height: 150px;
+    }
+
+    .card h3 {
+        font-size: 25px;
+    }
+
+    article h2 {
+        font-size: 30px;
+    }
+
+    #parrafo p {
+        font-size:1.2rem;
+        padding: 20px;
+    }
+    
+    .fa-brands {
+        font-size:40px;
+    }  
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .titulo--sedes {
+        font-size: 28px;
+        letter-spacing:5px;
+        text-shadow:  1px 0.5px #fff;
+    }
+
+    .card{
+        width: 230px;
+        height: 130px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    #parrafo p {
+        font-size:1rem;
+    }
+
+    .fa-brands {
+        font-size:35px;
+    }  
+
+    .footer__titulo--sedes {
+        font-size:35px;
+    }
+}
+
+/*vista mobile seccion sedes*/
+@media screen and (max-width: 380px) {
+    .nav__titulo {
+        font-size:40px;
+    }
+
+    .nav__link--logo {
+        padding: 10px;
+        width: 70px;
+    }
+
+    .ul__container__a {
+        font-size: 1.2rem;
+    }
+
+    .titulo--sedes {
+        font-size: 22px;
+        letter-spacing:3px;
+        text-shadow:  1px 0.2px #fff;
+    }
+
+    .card{
+        width: 230px;
+        height: 160px;
+        margin: 40px;
+    }
+
+    .card h3 {
+        font-size: 25px;
+    }
+    
+    .card h4 {
+        font-size: 15px;
+    }
+    
+    .card h5{
+        font-size: 10px;
+    }
+
+    article h2 {
+        font-size: 25px;
+    }
+
+    #parrafo p {
+        font-size:0.7rem;
+    }
+        
+    .fa-brands {
+        font-size:35px;
+        text-shadow:  1px 1px #ffffff;
+        margin: 15px;
+    }  
+
+    .footer__titulo--sedes {
+        font-size:30px;
+    }
+
+}
+/*seccion sedes terminada*/
+
+/*seccion nosotros*/
+.grid-nosotros {
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.nav--nosotros {
+    padding: 20px;
+}
+
+.main--titulo {
+    text-align: center;
+    margin: 40px 0 ;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow:  2px 1px #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+.contenedor--nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__entrenadores {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 26rem;
+    height:33rem;
+    border: 2px solid #fff;
+    background-image: linear-gradient(to bottom, #af0e2f, #0a0a0a);    
+    margin: 30px;
+    transition:all .2s;
+}
+
+/*hace zoom y cambia de color de fondo*/
+.div__entrenadores:hover{
+    transform:scale(1.1);
+    background-image:linear-gradient(to bottom, #af374f, #0a0a0a); 
+}
+
+.div__entrenadores img {
+    width: 18rem;
+    height: 18rem;
+    margin-top: 20px;
+}
+
+.div__entrenadores h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin: 10px 0;
+    color: #ffffff;
+
+}
+
+.div__entrenadores p {
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer--nosotros{
+    padding: 20px;
+    border-top: 4px solid #af0e2f;
+}
+
+
+
+/*media queries de nosotros*/
+@media screen and (max-width: 1340px) {
+
+    .main--titulo {
+        font-size: 50px;
+    }
+
+    .div__entrenadores {
+        width: 22rem;
+        height:29rem;
+    }
+    
+    .div__entrenadores img {
+        width: 14rem;
+        height: 14rem;
+        margin-top: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1152px) {
+    .nav--nosotros{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .main--titulo {
+        font-size: 40px;
+    }
+
+    .div__entrenadores {
+        width: 19rem;
+        height:26rem;
+    }
+    
+    .div__entrenadores img {
+        width: 11rem;
+        height: 11rem;
+        margin-top: 13px;
+    }
+
+    .div__entrenadores h3 {
+        font-size: 22px;
+    }
+    
+    .div__entrenadores p {
+        font-size: 16px;
+    }
+}
+
+/*vista tablet seccion nosotros*/
+@media screen and (max-width: 700px) {
+    
+    .main--titulo {
+        font-size: 30px;
+    }
+
+    .div__entrenadores {
+        width: 16rem;
+        height:23rem;
+    }
+    
+    .div__entrenadores img {
+        width: 10rem;
+        height: 10rem;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    
+    .nav__titulo {
+        font-size:36px;
+    }
+
+    .nav__link--logo {
+        width: 70px;
+        padding: 6px;
+    }
+
+    .div__entrenadores {
+        width: 14rem;
+        height:21rem;
+    }
+    
+    .div__entrenadores img {
+        width: 8rem;
+        height: 8rem;
+        margin-top: 8px;
+    }
+
+    .div__entrenadores h3 {
+        font-size: 18px;
+    }
+    
+    .div__entrenadores p {
+        font-size: 15px;
+    }
+}
+
+/*vista mobile seccion nosotros*/
+@media screen and (max-width: 380px) {
+
+    .nav__titulo {
+        font-size:33px;
+    }
+
+    .nav__link--logo {
+        width: 60px;
+    }
+
+    .titulos__container {
+        margin-bottom:6px;
+    }
+
+    .ul__container__a {
+        font-size: 1.1rem;
+    }
+
+    .main--titulo {
+        font-size: 24px;
+    }
+}
+/*termina seccion Sedes*/
+
+/*Seccion Contacto*/
+.grid-contacto {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.nav--contacto {
+    padding: 20px;
+}
+
+/*MAIN*/
+.main__contacto {
+    grid-area:main ;
+}
+
+
+.main__contacto h1, .main__contacto h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 12px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow:  1px 1px #ffffff;
+    color:#000000;
+    margin-top: 20px;
+}
+
+.main__contacto h1 {
+    margin-top: 10px;
+    font-size: 90px;
+}
+
+.section__contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 100px;
+    background: #e28686;   
+    border: solid 6px #000;
+    padding: 6px;
+}
+
+form {
+    width: 400px;
+    text-align: center;
+    flex: 1;
+    padding: 30px;
+}
+
+.section__contacto__input {
+    width: 100%;
+    padding: 9px;
+    margin:5px 0;
+    font-size: 1.2rem;
+    border-left: solid 4px #af0e2f;
+
+}
+
+.section__contacto__input:hover{
+    background-color: #e0e0e0;
+}
+
+textarea {
+    height: 250px;
+    width: 100%;
+    resize: none;
+}
+
+.checkbox {
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.checkbox:hover {
+    background-color: #e28686;
+}
+
+.section__contacto--boton {
+    display: flex;
+}
+
+.botones{
+    margin: 0px 15px;
+    background-color: #af0e2f;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+.botones:hover{
+    background-color: #b3304a;
+}
+
+.container__img--contacto {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container__img--contacto img {
+    width: 100%;
+}
+
+.img-container {
+    background-color: #af0e2f;
+    padding: 60px;
+    border-radius: 60%;
+    border: solid 6px #000;
+    width: 70%;
+    display: flex;
+    justify-content:center;
+}
+
+/*footer*/
+
+
+.footer--contacto {
+    border-top: 4px solid #af0e2f;
+    padding: 20px;
+    grid-area: footer;
+}
+
+@media screen and (max-width: 1290px) {
+
+    .main__contacto h1, .main__contacto h2 {
+        font-size: 40px;
+        letter-spacing: 8px;
+    }
+    
+    .main__contacto h1 {
+        margin-top: 10px;
+        font-size: 70px;
+    }
+
+    .img-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    
+    .main__contacto h1, .main__contacto h2 {
+        font-size: 35px;
+        margin:20px 15px;
+
+    }
+    
+    .main__contacto h1 {
+        margin: 10px 0;
+        font-size: 55px;
+    }
+
+    .botones{
+        margin: 0px 15px;
+        background-color: #af0e2f;
+        color: #fff;
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+
+    .img-container {
+        width: 80%;
+    }
+}
+
+
+
