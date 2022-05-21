@@ -99,7 +99,9 @@ span{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    list-style: none;
 }
+
 
 .ul__container__a {
     margin: 5px; 
@@ -120,7 +122,7 @@ nav ul li a:hover{
 /*termina header y nav del index*/
 
 /*main*/
-.container {
+.contenedor {
     grid-area: main;
     background-image: url("../assets/img/Index/imgfondo.png");
     background-repeat: no-repeat;
@@ -132,17 +134,17 @@ nav ul li a:hover{
     flex-wrap: wrap;
 }
 
-.container__section {
+.contenedor__section {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-end;
     flex-wrap: wrap;
     flex-direction: column;
     height: 100%;
     width: 100%;
 }
 
-.container__section h1  {
+.contenedor__section h1  {
     font-size: 90px;
     font-family: 'Bebas Neue', cursive;
     font-style: oblique;
@@ -153,7 +155,7 @@ nav ul li a:hover{
     text-align: center;
 }
 
-.container__section h2 {
+.contenedor__section h2 {
     font-size: 65px;
     text-shadow:  2px 2px #af0e2f;
     font-family: 'Bebas Neue', cursive;
@@ -164,7 +166,7 @@ nav ul li a:hover{
     text-align: center;
 }
 
-.container__section__boton {
+.contenedor__section__boton {
     font-size: 30px;
     background-color:#af0e2f;
     color: #ffffff;
@@ -178,7 +180,7 @@ nav ul li a:hover{
 }    
 
 /*aplica transformaciones al boton Contactanos*/
-.container__section__boton:hover{
+.contenedor__section__boton:hover{
     background-color:#c2040b;
     transform: scale(1.1);
 }
@@ -452,6 +454,8 @@ nav ul li a:hover{
 .section1 {
     display: flex;
     flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
     margin: 15px 0;
     grid-area: section1;
 }
@@ -491,35 +495,14 @@ nav ul li a:hover{
     margin: 7px ;
 }
 
-/*IMAGENES*/
-#container__div {
+.galeria {
+    width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; 
-    width: 60%;
-    gap: 20px;
+    align-items: center;
+    justify-content:center;
+    border: 2px solid #000;
 }
 
-.primera__section__img {
-    width: 42%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-}
-
-.primera__section__img h2{
-    font-size: 30px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 12px;
-    margin-top: 10px;
-}
-
-.primera__section__img img {
-    width: 100%;
-    border: 3px solid #000;
-}
 
 /*SECCION 2 DEL MAIN*/
 .section2{
