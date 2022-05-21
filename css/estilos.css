@@ -82,11 +82,7 @@ span{
     animation-iteration-count: infinite;
 }
 
-.barras {
-    background-color: #fff;
-    height: 60px;
-    border: 2px solid #af0e2f;
-}
+
 
 .navbar-collapse {
     flex-grow: 0;
@@ -108,7 +104,7 @@ span{
 }
 
 .ul__container__a {
-    margin: 5px;
+    margin: 10px;
     padding-right: 30px;
     font-size: 2rem;
     color: #ffffff;
