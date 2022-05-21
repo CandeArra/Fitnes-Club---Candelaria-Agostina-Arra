@@ -37,17 +37,16 @@ body {
 }
 
 /*navegacion*/
-.nav {
-    display:flex;
-    align-items: center;
-} 
-
 .navegador {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 100%;
-} 
+    margin-left: 50px;
+}
+
+.nav {
+    align-items:  center;
+    height: 100%;
+}
 
 .titulos__container{
     display: flex;
