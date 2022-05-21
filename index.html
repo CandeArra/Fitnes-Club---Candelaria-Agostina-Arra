@@ -15,33 +15,43 @@
     <!--header-->
     <div class="grid-container">
         <header class="cabecera">
-            <nav class="nav"> 
-                <!-- Enlace al index tocando el logo-->
-                
-                <div class="titulos__container">
-                    <a href="index.html"><img src="assets/iconos/Iconos gratuitos de Pesa diseñados por Skyclick.png" alt="logo"  class="nav__link--logo animate__animated animate__rotateIn" ></a> <!--animacion al logo-->
-                    <a href="index.html" class="nav__titulo" ><span>Fit</span>ness Club</a>    
+            <!--Enlaces de las secciones-->
+            <nav class="navbar navbar-expand-lg nav ">
+                <div class="navegador">
+                    
+                    <div class="titulos__container">
+                        <a class="navbar-brand logo" href="index.html"><img src="assets/iconos/Iconos gratuitos de Pesa diseñados por Skyclick.png" class="nav__link--logo animate__animated animate__rotateIn"></a>
+                        
+                        <a href="index.html" class="fitnessclub nav__titulo" ><span>Fit</span>ness Club</a>    
+                    </div>
+    
+                    <button class="navbar-toggler barras" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--secciones listas-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="ul__container__a" aria-current="page" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ul__container__a" href="paginas/actividades.html">ACTIVIDADES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ul__container__a" href="paginas/sedes.html">SEDES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ul__container__a" href="paginas/nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ul__container__a" href="paginas/contacto.html">CONTACTO</a>
+                            </li>                     
+                        </ul>
+                    </div>
+
                 </div>
-                <!--Enlaces de las secciones-->
-      
-                <ul class="ul__container"> 
-                    <li> 
-                        <a href="index.html" class="ul__container__a">Inicio</a>
-                    </li>
-                    <li> 
-                        <a href="paginas/actividades.html" class="ul__container__a">Actividades</a>
-                    </li>
-                    <li> 
-                        <a href="paginas/sedes.html" class="ul__container__a">Sedes</a>
-                    </li>
-                    <li> 
-                        <a href="paginas/nosotros.html" class="ul__container__a">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="paginas/contacto.html" class="ul__container__a">Contacto</a>
-                    </li>
-                </ul> 
-            </nav>
+              </nav>
         </header>
         <!-- termina el header y nav -->
         <!--página principal con su respectivo titulo y su fondo de pantalla-->
@@ -51,11 +61,11 @@
 
                 <h1>Tu mejor versión te espera</h1> 
                 <h2> ¡Veni a entrenar, no te vas a arrepentir!</h2>
-    
+
                 <a href="paginas/contacto.html">
-                    <button class="contenedor__section__boton">Contactanos</button> <!--dirige a la seccion contacto-->
+                    <button type="button" class="contenedor__section__boton btn btn-lg btn-danger border border-3">CONTACTANOS</button>
                 </a>
-                
+
                 <div class="logos-redes">
                     <a href="https://google.com.ar" target= "_blank"><i class="fa-brands fa-instagram"></i></a>  
                     <a href="https://google.com.ar" target= "_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -82,7 +92,7 @@
             </div>
             
             <div>
-                <a href="index.html" class="footer__titulo"><span>Fit</span>ness Club</a>  <!--lleva al index -->       
+                <a href="index.html" class="footer__titulo fitnessclub"><span>Fit</span>ness Club</a>  <!--lleva al index -->       
             </div>
 
         </footer>

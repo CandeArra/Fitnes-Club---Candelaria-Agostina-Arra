@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Club - Sedes</title> 
     <link rel="shortcut icon" href="../assets/iconos/foto.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/a81601b57d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -15,39 +16,45 @@
     <!--header-->
     <div class="grid-container grid-sedes">
         <header class="cabecera">
-            <nav class="nav nav--sedes">
-               <!-- Enlace al index tocando el logo-->
-                
-               <div class="titulos__container">
-                    <a href="../index.html"><img src="../assets/iconos/Iconos gratuitos de Pesa diseñados por Skyclick.png" alt="logo"  class="nav__link--logo animate__animated animate__rotateIn" ></a>
-                    <a href="../index.html" class="nav__titulo " ><span>Fit</span>ness Club</a>    
-                </div>>
-                <!--Enlaces de las secciones-->
-  
-                <ul class="ul__container"> 
-                    <li> 
-                        <a href="../index.html" class="ul__container__a">Inicio</a>
-                    </li>
-                    <li> 
-                        <a href="actividades.html" class="ul__container__a">Actividades</a>
-                    </li>
-                    <li> 
-                        <a href="sedes.html" class="ul__container__a">Sedes</a>
-                    </li>
-                    <li> 
-                        <a href="nosotros.html" class="ul__container__a">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html" class="ul__container__a">Contacto</a>
-                    </li>
-                </ul> 
-            </nav>
+            <!--Enlaces de las secciones-->
+            <nav class="navbar navbar-expand-lg nav ">
+                <div class="navegador">
+                    
+                    <div class="titulos__container">
+                        <a class="navbar-brand logo" href="../index.html"><img src="../assets/iconos/Iconos gratuitos de Pesa diseñados por Skyclick.png" class="nav__link--logo animate__animated animate__rotateIn"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a href="../index.html" class="fitnessclub nav__titulo" ><span>Fit</span>ness Club</a>    
+                    </div>
+    
+                    <!--secciones listas-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="ul__container__a" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ul__container__a" href="actividades.html">ACTIVIDADES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ul__container__a" href="sedes.html">SEDES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ul__container__a" href="nosotros.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ul__container__a" href="contacto.html">CONTACTO</a>
+                            </li>                     
+                        </ul>
+                    </div>
+                </div>
+              </nav>
         </header>
         <!-- termina el header y nav -->
     
         <!--página principal con su respectiva y unica seccion-->
         <main>
-
             <h1 class="titulo--sedes">Explorá, encontrá la sede que mas te guste <br> y comenzá la vida fitness!</h1>     
 
             <section class="sec">
@@ -102,7 +109,6 @@
                 </div>
             </div>
     
-    
             <div class="logos-redes">
                 <a href="https://google.com.ar" target= "_blank"><i class="fa-brands fa-instagram"></i></a>  
                 <a href="https://google.com.ar" target= "_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -134,6 +140,6 @@
         <!-- termina el footer --> 
     </div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
