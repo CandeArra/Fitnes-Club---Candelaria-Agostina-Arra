@@ -821,13 +821,41 @@ video {
     width: 400px;
     height: 300px;
     margin: 50px 40px ;
-    background: linear-gradient(to bottom, #321b5f, #87021f);
-    border: 4px solid #000000;
+    background-size:contain;
+    background-image: linear-gradient(to bottom, #321b5f, #87021f);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    animation-name: bordesColoridos;
+    animation-duration:4s;    
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes bordesColoridos {
+
+    0% {
+        border: 4px solid #000;
+    }
+    
+    25% {
+        border: 4px solid #460000;
+    }
+    
+    50% {
+        border: 4px solid #6f0101;
+    }
+    
+    75% {
+        border: 4px solid #460000;
+    }
+    
+    100% {
+        border: 4px solid #000000;
+    }
+
 }
 
 .card:hover{
