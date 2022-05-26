@@ -83,7 +83,6 @@ span{
 }
 
 
-
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -266,14 +265,14 @@ nav ul li a:hover{
 /*termina footer del index*/
 
 /*@media queries*/
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1480px) {
 
     .nav__link--logo{
-        width:80px;
+        width:95px;
     }
 
-    .nav__titulo {
-        font-size: 40px;
+    .nav__titulo,.footer__titulo{
+        font-size:50px;
     }
 
     .container__section{
@@ -281,16 +280,16 @@ nav ul li a:hover{
     }
 
     .ul__container__a {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: #ffffff;
     }
 
     .contenedor__section h1  {
-        font-size: 70px;
+        font-size: 80px;
     }
 
     .contenedor__section h2 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .contenedor__section__boton {
@@ -298,135 +297,151 @@ nav ul li a:hover{
         padding: 25px;
     }
     .container__footer--derechos {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .email, .tel {
-        font-size: 14px;
-    }
-
-    .footer__titulo{
-        font-size: 40px;
+        font-size: 17px;
     }
 
 }
 
-
-/*vista de tablet*/
-@media screen and (max-width: 700px) {
-
-
-
+@media screen and (max-width: 1270px) {
+    
     .nav__link--logo{
-        padding: 10px;
-        width:70px;
+        width:90px;
     }
 
-    .ul__container {
-        justify-content: center;
+    .nav__titulo,.footer__titulo{
+        font-size:45px !important;
+    }
+
+    .ul__container__a {
+        font-size: 1.6rem;
+        padding-right: 15px;
+
     }
 
     .contenedor__section h1  {
-        font-size: 55px;
-        text-shadow:  2px 1px #af0e2f;
+        font-size: 75px;
     }
 
     .contenedor__section h2 {
-        font-size: 35px;
-        text-shadow:  2px 1px #af0e2f;
+        font-size: 45px;
     }
 
-    .contenedor__section__boton {
-        font-size: 22px;
-        padding: 20px;
+    .container__footer--derechos,.email, .tel {
+        font-size: 14px;
     }
 
-    .container__footer--derechos {
-        font-size: 13px;
+    .fa-brands {
+        font-size:60px !important;
     }
-
-    .email, .tel {
-        font-size: 13px;
-    }
-
-    .footer__titulo{
-        font-size: 50px;
-    }
-
 }
 
+@media screen and (max-width: 1150px) {
+    .contenedorNav {
+        justify-content:center !important;
+    }
+}
 
-@media screen and (max-width: 532px) {
+@media screen and (max-width: 1116px) {
+    .nav__link--logo{
+        width:90px;
+        margin: 0px ;
+    }
+}
+
+@media screen and (max-width: 900px) {
 
     .ul__container__a {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
+        padding-right: 15px;
+    }
+
+    .contenedor__section h1  {
+        font-size: 70px;
+        padding: 10px;
+    }
+
+    .contenedor__section h2 {
+        font-size: 40px;
+        padding: 10px;
     }
 
     .contenedor__section__boton {
         font-size: 20px;
+        padding: 20px;
     }
-    .container__footer--derechos {
-        font-size: 11px;
-    }
-
-    .email, .tel {
-        font-size: 11px;
+    .container__footer--derechos,.email, .tel {
+        font-size: 12px;
     }
 
-    .footer__titulo{
-        font-size: 30px;
+    .fa-brands {
+        font-size:50px;
     }
 
+    .fitnessclub{
+        font-size:40px !important;
+    }
 }
 
-/*vista mobile*/
-@media screen and (max-width: 400px) {
+/*vista de tablet*/
+@media screen and (max-width: 700px) {
 
     .nav__link--logo{
-        padding: 4px;
-        width:55px;
-    }
-
-    .nav__titulo {
-        font-size: 30px;
-    }
-
-    .ul__container__a {
-        font-size: 1.2rem;
+        width:80px;
     }
 
     .contenedor__section h1  {
         font-size: 50px;
-        padding: 0px;
+        text-shadow:  1px 1px #af0e2f;
     }
 
     .contenedor__section h2 {
-        font-size: 28px;
+        font-size: 35px;
         text-shadow:  1px 1px #af0e2f;
-        letter-spacing: 7px;
     }
 
     .contenedor__section__boton {
-        font-size: 15px;
-        padding: 15px;
+        font-size: 17px;
+        padding: 17px;
+    }
+
+    .container__footer--derechos,.email, .tel {
+        font-size: 12px;
     }
 
     .fa-brands {
-        font-size:55px;
+        font-size:45px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav__link--logo{
+        width:70px;
     }
 
-    .container__footer--derechos {
-        font-size: 11px;
+    .nav__titulo{
+        font-size:35px !important;
+    }
+    .contenedor__section h1  {
+        font-size: 40px;
     }
 
-    .email, .tel {
-        font-size: 10px;
-    }
-
-    .footer__titulo{
+    .contenedor__section h2 {
         font-size: 30px;
     }
 
+    .container__footer--derechos,.email, .tel {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav__titulo{
+        font-size:30px !important;
+    }
 }
 /*termina seccion index*/
 
@@ -494,13 +509,17 @@ nav ul li a:hover{
     margin: 7px ;
 }
 
-.galeria {
-    width: 50%;
+.container--carousel {
     display: flex;
     flex-wrap: wrap;
-    min-width: 500px;
+    justify-content: center;
     align-items: center;
-    justify-content:center;
+    width: 60%;
+    min-width: 450px;
+
+}
+.galeria {
+    width: 90%;
     border: 2px solid #000;
 }
 
@@ -611,9 +630,13 @@ video {
 
 /*media queries de actividades*/
 @media screen and (max-width: 1300px) {
+    
+    .primera__section__acti h1 {
+        font-size: 40px;
+    }
 
-    .primera__section__img {
-        width: 42%;
+    .primera__section__acti ul li {
+        font-size: 22px;
     }
 
     .section2__div h2{
@@ -625,29 +648,22 @@ video {
         text-shadow:  2px 1px #ffffff;
     }
 
-    .fa-brands {
-        font-size:70px;
+    .section2__div--boton {
+        font-size: 25px;
+        padding: 25px;
     }
 
 }
-
-@media screen and (max-width: 1202px) {
-    .primera__section__img {
-        width:45%;
+@media screen and (max-width: 1000px) {
+    .section2__div h2{
+        font-size: 40px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .primera__section__img {
-        width:47%;
-    }
 
     .primera__section__acti h1 {
         font-size: 30px;
-    }
-
-    .primera__section__acti ul li {
-        font-size: 25px;
     }
 
     .section2__div h2{
@@ -660,41 +676,49 @@ video {
 
     .section2__div--boton {
         font-size: 20px;
+        padding: 20px;
     }
 
     #p p {
-        font-size: 45px;
+        font-size: 40px;
         text-shadow:  2px 1px #ffffff;
     }
 
-    .fa-brands {
-        font-size:60px;
+}
+@media screen and (max-width: 750px) {
+    .section1 {
+        display: block;
+    }
+    .primera__section__acti {
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
-    .title {
-        font-size: 38px;
+    .container--carousel {
+        display: flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
     }
-
+    .galeria {
+        width: 80%;
+        border: 2px solid #000;
+    }
 }
 
 /*vista tablet de seccion actividades*/
 @media screen and (max-width: 700px) {
 
-    .primera__section__img {
-        width:50%;
-    }
-    .primera__section__img h2{
-        font-size: 18px;
-    }
-
     .primera__section__acti h1 {
-        font-size:19px;
+        font-size:25px;
         text-shadow: 1px 1px #ffffff;
     }
 
     .primera__section__acti ul li {
-        font-size: 16px;
+        font-size: 18px;
     }
+    
 
     .section2__div h2{
         font-size: 28px;
@@ -718,58 +742,57 @@ video {
         letter-spacing: 9px;
     }
 
-    .fa-brands {
-        font-size:45px;
+}
+@media screen and (max-width: 500px) {
+    .primera__section__acti h1 {
+        font-size:22px;
+    }
+
+    .primera__section__acti ul li {
+        font-size: 15px;
+    }
+    
+
+    .section2__div h2{
+        font-size: 26px;
+    }
+
+    .section2__div h3{
+        font-size:20px;
+    }
+
+    .section2__div--boton {
+        font-size: 18px;
+        padding: 18px;
+    }
+
+    #p p {
+        font-size: 24px;
+        margin: 0px;
+    }
+
+    .title {
+        font-size: 35px !important;
     }
 }
 
 /*vista mobile seccion actividades*/
 @media screen and (max-width: 380px) {
 
-    .primera__section__img {
-        width:49%;
-    }
-    .primera__section__img h2{
-        font-size: 19px;
-        letter-spacing: 6px;
-    }
-
     .primera__section__acti h1 {
-        font-size:18px;
-        letter-spacing: 8px;
+        font-size:26px;
     }
 
     .primera__section__acti ul li {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .section2__div h2{
-        letter-spacing: 3px;
-        font-size: 20px;
-
+        font-size: 24px;
     }
 
     .section2__div h3{
-        font-size:17px;
-    }
-
-    .section2__div--boton {
-        font-size: 14px;
-        padding: 20px;
-        border: 2px solid #fff;
-    }
-
-    #p p {
-        font-size: 18px;
-        letter-spacing: 4px;
-    }
-
-    .fa-brands {
-        font-size:35px;
-    }
-
-    .title {
-        font-size: 25px;
+        font-size:20px;
     }
 
 }
@@ -832,7 +855,6 @@ video {
     animation-duration:4s;    
     animation-iteration-count: infinite;
 }
-
 
 @keyframes bordesColoridos {
 
@@ -1329,6 +1351,14 @@ article h2 {
         margin-top: 10px;
     }
 
+    .div__entrenadores h3 {
+        font-size: 20px;
+    }
+
+    .div__entrenadores p {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -1364,14 +1394,6 @@ article h2 {
 
 /*vista mobile seccion nosotros*/
 @media screen and (max-width: 380px) {
-
-    .nav__titulo {
-        font-size:33px;
-    }
-
-    .nav__link--logo {
-        width: 60px;
-    }
 
     .titulos__container {
         margin-bottom:6px;
