@@ -8,8 +8,11 @@
 
 
 body {
-    background: linear-gradient(to right, #d53369, #be2a04);
     height: 100vh;
+}
+
+main {
+    background: linear-gradient(to right, #d53369, #be2a04);
 }
 
 /*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
@@ -1416,17 +1419,13 @@ article h2 {
     "header"
     "main"
     "footer";
-}
-
-.nav--contacto {
-    padding: 20px;
+    
 }
 
 /*MAIN*/
 .main__contacto {
     grid-area:main ;
 }
-
 
 .main__contacto h1, .main__contacto h2 {
     font-size: 50px;
@@ -1456,8 +1455,6 @@ article h2 {
 }
 
 form {
-    width: 400px;
-    text-align: center;
     flex: 1;
     padding: 30px;
 }
@@ -1510,7 +1507,6 @@ textarea {
 }
 
 .container__img--contacto {
-    flex: 1;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -1532,13 +1528,12 @@ textarea {
 }
 
 /*footer*/
-
-
 .footer--contacto {
     border-top: 4px solid #af0e2f;
     padding: 20px;
     grid-area: footer;
 }
+
 
 @media screen and (max-width: 1290px) {
 
@@ -1559,11 +1554,9 @@ textarea {
 
 @media screen and (max-width: 700px) {
 
-
     .main__contacto h1, .main__contacto h2 {
         font-size: 35px;
         margin:20px 15px;
-
     }
 
     .main__contacto h1 {
@@ -1584,5 +1577,23 @@ textarea {
     }
 }
 
+@media screen and (max-width: 595px) {
+    .main__contacto h2 {
+        font-size: 25px;
+    }
+
+    .main__contacto h1 {
+        font-size: 45px;
+    }
+
+    .checkbox,.section__contacto__input{
+        font-size: 1rem;
+    }
+
+    .botones{
+        font-size: 0.7rem;
+        padding: 12px;
+    }
+}
 
 
