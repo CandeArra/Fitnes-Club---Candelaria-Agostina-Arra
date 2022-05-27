@@ -10,6 +10,12 @@
 body {
     background: linear-gradient(to right, #d53369, #be2a04);
     height: 100vh;
+
+}
+
+main {
+   width: 100vw;
+
 }
 
 /*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
@@ -29,7 +35,6 @@ body {
 }
 
 /*header*/
-
 .cabecera {
     grid-area: header;
     background-color:#000000;
@@ -515,9 +520,8 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     width: 60%;
-    min-width: 450px;
-
 }
+
 .galeria {
     width: 90%;
     border: 2px solid #000;
@@ -1361,7 +1365,7 @@ article h2 {
 
 }
 
-@media screen and (max-width: 420px) {
+ @media screen and (max-width: 420px) {
 
     .nav__titulo {
         font-size:36px;
@@ -1388,9 +1392,9 @@ article h2 {
     }
 
     .div__entrenadores p {
-        font-size: 15px;
+        font-size: 13px;
     }
-}
+} 
 
 /*vista mobile seccion nosotros*/
 @media screen and (max-width: 380px) {
@@ -1427,7 +1431,6 @@ article h2 {
     grid-area:main ;
 }
 
-
 .main__contacto h1, .main__contacto h2 {
     font-size: 50px;
     font-weight: bold;
@@ -1456,10 +1459,10 @@ article h2 {
 }
 
 form {
-    width: 400px;
     text-align: center;
     flex: 1;
     padding: 30px;
+    width: 100%;
 }
 
 .section__contacto__input {
@@ -1482,8 +1485,8 @@ textarea {
 
 .checkbox {
     border: none;
-    text-align: left;
-    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 600;
     color: #000;
     font-size: 1.3rem;
     margin-bottom: 20px;
@@ -1495,14 +1498,19 @@ textarea {
 
 .section__contacto--boton {
     display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
 }
 
 .botones{
-    margin: 0px 15px;
+    width: 70%;
+    margin:15px;
     background-color: #af0e2f;
     color: #fff;
     padding: 20px;
     font-size: 1.1rem;
+    border: 2px solid #000;
 }
 
 .botones:hover{
@@ -1529,11 +1537,14 @@ textarea {
     width: 70%;
     display: flex;
     justify-content:center;
+    min-width:240px;
+}
+
+.img {
+    min-width: 150px;
 }
 
 /*footer*/
-
-
 .footer--contacto {
     border-top: 4px solid #af0e2f;
     padding: 20px;
@@ -1552,13 +1563,9 @@ textarea {
         font-size: 70px;
     }
 
-    .img-container {
-        width: 90%;
-    }
 }
 
 @media screen and (max-width: 700px) {
-
 
     .main__contacto h1, .main__contacto h2 {
         font-size: 35px;
@@ -1571,18 +1578,91 @@ textarea {
         font-size: 55px;
     }
 
-    .botones{
-        margin: 0px 15px;
-        background-color: #af0e2f;
-        color: #fff;
+    .section__contacto__input {
+        padding: 7px;
+        font-size: 1.1rem;
+    } 
+
+}
+
+@media screen and (max-width: 550px) {
+    form {
         padding: 15px;
-        font-size: 0.8rem;
+    }
+    .main__contacto h2 {
+        font-size: 26px;
+    }
+
+    .main__contacto h1 {
+        font-size: 50px;
+    }
+
+    .section__contacto__input {
+        font-size: 1rem;
     }
 
     .img-container {
-        width: 80%;
+        min-width:200px;
+        border: 4px solid #000;
+    }
+    
+    .img {
+        min-width: 100px;
     }
 }
 
+@media screen and (max-width: 480px) {
+
+    .main__contacto h2 {
+        font-size: 20px;
+    }
+
+    .main__contacto h1 {
+        font-size: 40px;
+    }
+
+    .section__contacto__input { 
+        font-size: 0.8rem;
+    }
+
+    .checkbox {
+        font-size: 1rem;
+    }  
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .main__contacto h2 {
+        font-size: 20px;
+    }
+
+    .main__contacto h1 {
+        font-size: 40px;
+    }
+
+    .img-container {
+        min-width:120px;
+    }
+    
+    .img {
+        min-width: 100px;
+    }
+
+}
 
 
+@media screen and (max-width: 400px) {
+    .img-container {
+        min-width:100px;
+    }
+    
+    .img {
+        min-width: 80px;
+    }
+
+    .checkbox {
+        font-size: 0.8rem;
+    }
+
+}
