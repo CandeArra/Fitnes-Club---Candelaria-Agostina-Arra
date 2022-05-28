@@ -1,0 +1,43 @@
+/*variables*/
+$colorPagina: #af0e2f;
+$colorBlanco: #fff;
+$colorNegro: #000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #d53369, #be2a04);
+}
+
+main {
+    width: 100vw;
+}
+
+/*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+    grid-template-rows: auto;
+    grid-template-columns:  1fr ;
+
+    height: 100%;
+    width: 100%;
+}
+
+/*general*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Inconsolata&family=Lato&family=Montserrat:ital,wght@1,200&family=Ms+Madi&family=Mukta:wght@300&family=Orelega+One&family=Oswald&family=Rajdhani:wght@600&family=Sen&family=Square+Peg&display=swap');
+
+/*secciones del index*/
+@import "header";
+@import "main";
+@import "footer";
+@import "responsiveDesign";

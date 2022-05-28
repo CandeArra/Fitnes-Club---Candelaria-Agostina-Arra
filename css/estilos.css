@@ -13,11 +13,7 @@ body {
 }
 
 main {
-   width: 100vw;
-
-}
-
-main {
+    width: 100vw;
     background: linear-gradient(to right, #d53369, #be2a04);
 }
 
@@ -1459,10 +1455,7 @@ article h2 {
 }
 
 form {
-<<<<<<< HEAD
     text-align: center;
-=======
->>>>>>> 826a405e9765b87ab047129e6a0007de655e3da9
     flex: 1;
     padding: 30px;
     width: 100%;
@@ -1613,7 +1606,6 @@ textarea {
     }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 480px) {
 
     .main__contacto h2 {
@@ -1652,7 +1644,8 @@ textarea {
         min-width: 100px;
     }
 
-=======
+}
+
 @media screen and (max-width: 595px) {
     .main__contacto h2 {
         font-size: 25px;
@@ -1670,7 +1663,6 @@ textarea {
         font-size: 0.7rem;
         padding: 12px;
     }
->>>>>>> 826a405e9765b87ab047129e6a0007de655e3da9
 }
 
 

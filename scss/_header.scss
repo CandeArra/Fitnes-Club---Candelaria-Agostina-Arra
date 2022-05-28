@@ -1,0 +1,91 @@
+/*header*/
+.cabecera {
+	grid-area: header;
+	background-color: $colorNegro;
+	border-bottom: solid 4px $colorPagina;
+}
+
+/*navegacion*/
+.navegador {
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+}
+
+.nav {
+	align-items: center;
+	height: 100%;
+}
+
+.titulos__container {
+	display: flex;
+	align-items: center;
+}
+
+.nav__link--logo {
+	padding: 10px;
+	margin-right: 30px;
+	width: 105px;
+	border: solid 3px $colorBlanco;
+	border-radius: 50%;
+	background: linear-gradient(to right, #af0206, #761161);
+}
+
+/*nombre del gym*/
+
+/*padre*/
+.nav__titulo {
+	color: $colorBlanco;
+	font-family: 'Rajdhani', sans-serif;
+	text-transform: uppercase;
+	font-size: 60px;
+	text-decoration: none;
+	font-weight: bold;
+
+	/*hijo*/
+    span {
+        color: $colorPagina;
+        animation-name: spanTitulo;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    &:hover {
+		color:$colorBlanco;
+	}
+}
+
+/*cambia constantemente los colores del nombre del gimnasio*/
+@keyframes "spanTitulo" {
+	0% {
+		color: $colorPagina;
+	}
+	50% {
+		color: #761161;
+	}
+	100% {
+		color: $colorPagina;
+	}
+}
+
+.navbar-collapse {
+	flex-grow: 0;
+}
+
+.ul__container__a {
+	margin: 10px;
+	padding-right: 30px;
+	font-size: 2rem;
+	color: $colorBlanco;
+	font-family: 'Rajdhani', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 2px 2px $colorPagina;
+    
+    &:hover {
+        color: $colorPagina;
+        text-shadow: none;
+    }
+}
+/*termina header y nav del index*/
