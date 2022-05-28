@@ -12,9 +12,9 @@ body {
     background: linear-gradient(to right, #d53369, #be2a04);
 }
 
-main {
+/* main {
     width: 100vw; 
-}
+} */
 
 /*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
 
@@ -74,7 +74,7 @@ main {
     font-weight: bold;
 }
 
-.fitnessclub:hover{
+.nav__titulo:hover,.footer__titulo:hover{
     color: #fff;
 }
 
@@ -1577,6 +1577,9 @@ textarea {
         font-size: 1.1rem;
     } 
 
+    .main__contacto {
+        width: 100vw; 
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -1603,6 +1606,7 @@ textarea {
     .img {
         min-width: 100px;
     }
+
 }
 
 @media screen and (max-width: 480px) {
