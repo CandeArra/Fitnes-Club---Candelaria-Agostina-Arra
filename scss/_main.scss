@@ -70,7 +70,6 @@
 	width: 100%;
 	flex-wrap: wrap;
 
-    /*hijo*/
     .fa-brands {
         color: $colorNegro;
         text-shadow: 2px 2px $colorBlanco;
@@ -79,9 +78,9 @@
         animation-name: logos-redes;
         animation-iteration-count: infinite;
         animation-duration: 5s;
-		
+
         /*animacion de redes sociales: cambio de color*/
-        @keyframes "logos-redes" {
+        @keyframes logos-redes {
             0% {
                 color: $colorNegro;
             }

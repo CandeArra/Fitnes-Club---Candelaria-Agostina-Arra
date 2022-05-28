@@ -39,9 +39,27 @@
             text-transform: uppercase;
             font-size: 60px;
             text-decoration: none;
-            font-weight: bold;
-        }
-	}
-}
+            font-weight: bold;    
 
+            span {
+                color: $colorPagina;
+                animation-name: spanTitulo;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+        
+                @keyframes spanTitulo {
+                    0% {
+                        color: $colorPagina;
+                    }
+                    50% {
+                        color: #761161;
+                    }
+                    100% {
+                        color: $colorPagina;
+                    }
+                }
+	        }
+        }
+    }
+}
 /*termina footer del index*/

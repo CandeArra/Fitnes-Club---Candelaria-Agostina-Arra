@@ -66,18 +66,18 @@ main {
     animation-name: spanTitulo;
     animation-duration: 2s;
     animation-iteration-count: infinite; }
-  .nav__titulo:hover {
-    color: #fff; }
 
-/*cambia constantemente los colores del nombre del gimnasio*/
-@keyframes "spanTitulo" {
+@keyframes spanTitulo {
   0% {
     color: #af0e2f; }
   50% {
     color: #761161; }
   100% {
     color: #af0e2f; } }
+  .nav__titulo:hover {
+    color: #fff; }
 
+/*cambia constantemente los colores del nombre del gimnasio*/
 .navbar-collapse {
   flex-grow: 0; }
 
@@ -157,8 +157,7 @@ main {
   justify-content: flex-end;
   align-items: flex-end;
   width: 100%;
-  flex-wrap: wrap;
-  /*hijo*/ }
+  flex-wrap: wrap; }
   .logos-redes .fa-brands {
     color: #000;
     text-shadow: 2px 2px #fff;
@@ -169,7 +168,7 @@ main {
     animation-duration: 5s;
     /*animacion de redes sociales: cambio de color*/ }
 
-@keyframes "logos-redes" {
+@keyframes logos-redes {
   0% {
     color: #000; }
   25% {
@@ -219,6 +218,19 @@ main {
       font-size: 60px;
       text-decoration: none;
       font-weight: bold; }
+      .container__footer div .footer__titulo span {
+        color: #af0e2f;
+        animation-name: spanTitulo;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
+
+@keyframes spanTitulo {
+  0% {
+    color: #af0e2f; }
+  50% {
+    color: #761161; }
+  100% {
+    color: #af0e2f; } }
 
 /*termina footer del index*/
 /*@media queries*/

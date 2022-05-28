@@ -48,6 +48,18 @@
         animation-name: spanTitulo;
         animation-duration: 2s;
         animation-iteration-count: infinite;
+
+		@keyframes spanTitulo {
+			0% {
+				color: $colorPagina;
+			}
+			50% {
+				color: #761161;
+			}
+			100% {
+				color: $colorPagina;
+			}
+		}
     }
 
     &:hover {
@@ -56,17 +68,7 @@
 }
 
 /*cambia constantemente los colores del nombre del gimnasio*/
-@keyframes "spanTitulo" {
-	0% {
-		color: $colorPagina;
-	}
-	50% {
-		color: #761161;
-	}
-	100% {
-		color: $colorPagina;
-	}
-}
+
 
 .navbar-collapse {
 	flex-grow: 0;
