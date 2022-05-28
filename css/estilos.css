@@ -9,12 +9,11 @@
 
 body {
     height: 100vh;
-
+    background: linear-gradient(to right, #d53369, #be2a04);
 }
 
 main {
     width: 100vw;
-    background: linear-gradient(to right, #d53369, #be2a04);
 }
 
 /*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
