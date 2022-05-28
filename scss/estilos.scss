@@ -1,8 +1,3 @@
-/*variables*/
-$colorPagina: #af0e2f;
-$colorBlanco: #fff;
-$colorNegro: #000;
-
 *{
     margin: 0;
     padding: 0;
@@ -34,6 +29,7 @@ main {
 }
 
 /*general*/
+@import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Inconsolata&family=Lato&family=Montserrat:ital,wght@1,200&family=Ms+Madi&family=Mukta:wght@300&family=Orelega+One&family=Oswald&family=Rajdhani:wght@600&family=Sen&family=Square+Peg&display=swap');
 
 /*secciones del index*/
