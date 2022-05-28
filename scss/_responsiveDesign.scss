@@ -1,172 +1,184 @@
-/*@media queries*/
-
 @media screen and (max-width: 1480px) {
-	.nav__link--logo {
-		width: 95px;
-	}
-	.nav__titulo {
-		font-size: 50px;
-	}
-	.footer__titulo {
-		font-size: 50px;
-	}
-	.container__section {
-		justify-content: flex-end;
-	}
-	.ul__container__a {
-		font-size: 1.8rem;
-		color:$colorBlanco;
-	}
 
-	.contenedor__section {
-		h1 {
-			font-size: 80px;
-		}
-		h2 {
-			font-size: 50px;
-		}
-	}
+    .nav__link--logo{
+        width:95px;
+    }
 
-	.contenedor__section__boton {
-		font-size: 25px;
-		padding: 25px;
-	}
+    .fitnessclub{
+        font-size:50px;
+    }
 
-	.container__footer--derechos {
-		font-size: 17px;
-	}
+    .ul__container__a {
+        font-size: 1.8rem;
+        color: $colorBlanco;
+    }
 
-	.email,.tel {
-		font-size: 17px;
-	}
+    .contenedor__section{
+        justify-content: flex-end;
+
+        h1{
+           font-size: 80px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+    .contenedor__section__boton {
+        font-size: 25px;
+        padding: 25px;
+    }
+
+    .container__footer--derechos,.email,.tel {
+        font-size: 17px;
+    }
+
 }
 
 @media screen and (max-width: 1270px) {
+    
+    .nav__link--logo{
+        width:90px;
+    }
 
-	.nav__link--logo {
-		width: 90px;
-	}
-	.nav__titulo, .footer__titulo{
-		font-size: 45px !important;
-	}
+    .fitnessclub{
+        font-size:45px !important;
+    }
 
-	.ul__container__a {
-		font-size: 1.6rem;
-		padding-right: 15px;
-	}
+    .ul__container__a {
+        font-size: 1.6rem;
+        padding-right: 15px;
 
-	.contenedor__section {
-		h1 {
-			font-size: 75px;
-		}
-		h2 {
-			font-size: 45px;
-		}
-	}
+    }
+  
+    .contenedor__section{
+        h1{
+            font-size: 75px;
+        }
 
-	.container__footer--derechos,.email,.tel {
-		font-size: 14px;
-	}
+        h2 {
+            font-size: 45px;
+        }
+    }
 
-	.fa-brands {
-		font-size: 60px !important;
-	}
+    .container__footer--derechos,.email, .tel {
+        font-size: 14px;
+    }
+
+    .fa-brands {
+        font-size:60px !important;
+    }
 }
 
 @media screen and (max-width: 1150px) {
-	.contenedorNav {
-		justify-content: center !important;
-	}
+    .contenedorNav {
+        justify-content:center !important;
+    }
 }
 
 @media screen and (max-width: 1116px) {
-	.nav__link--logo {
-		width: 90px;
-		margin: 0px;
-	}
+    .nav__link--logo{
+        width:90px;
+        margin: 0px ;
+    }
 }
 
 @media screen and (max-width: 900px) {
 
-	.ul__container__a {
-		font-size: 1.6rem;
-		padding-right: 15px;
-	}
+    .ul__container__a {
+        font-size: 1.6rem;
+        padding-right: 15px;
+    }
 
-	.contenedor__section {
-		h1 {
-			font-size: 70px;
-			padding: 10px;
-		}
-		h2 {
-			font-size: 40px;
-			padding: 10px;
-		}
-	}
+    .contenedor__section {
 
-	.contenedor__section__boton {
-		font-size: 20px;
-		padding: 20px;
-	}
+        h1  {
+            font-size: 70px;
+            padding: 10px;
+        }
 
-	.container__footer--derechos,.email,.tel {
-		font-size: 12px;
-	}
+        h2 {
+            font-size: 40px;
+            padding: 10px;
+        }
+    }
 
-	.fa-brands {
-		font-size: 50px;
-	}
-	.fitnessclub {
-		font-size: 40px !important;
-	}
+    .contenedor__section__boton {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .container__footer--derechos,.email, .tel {
+        font-size: 12px;
+    }
+
+    .fa-brands {
+        font-size:50px;
+    }
+
 }
-@media screen and (max-width: 700px) {
-	.nav__link--logo {
-		width: 80px;
-	}
-	.contenedor__section {
-		h1 {
-			font-size: 50px;
-			text-shadow: 1px 1px $colorPagina;
-		}
-		h2 {
-			font-size: 35px;
-			text-shadow: 1px 1px $colorPagina;
-		}
-	}
-	.contenedor__section__boton {
-		font-size: 17px;
-		padding: 17px;
-	}
 
-	.fa-brands {
-		font-size: 45px !important;
-	}
+/*vista de tablet*/
+@media screen and (max-width: 700px) {
+
+    .nav__link--logo{
+        width:80px;
+    }
+    
+    .contenedor__section {
+
+        h1  {
+            font-size: 50px;
+            text-shadow:  1px 1px $colorPagina;
+        }
+
+        h2 {
+            font-size: 35px;
+            text-shadow:  1px 1px $colorPagina;
+        }
+    }
+
+    .contenedor__section__boton {
+        font-size: 17px;
+        padding: 17px;
+    }
+
+    .container__footer--derechos,.email, .tel {
+        font-size: 12px;
+    }
+
+    .fa-brands {
+        font-size:45px !important;
+    }
 }
 
 @media screen and (max-width: 480px) {
-	.nav__link--logo {
-		width: 70px;
-	}
-	.nav__titulo {
-		font-size: 35px !important;
-	}
-	.contenedor__section {
-		h1 {
-			font-size: 40px;
-		}
-		h2 {
-			font-size: 30px;
-		}
-	}
-	.container__footer--derechos,.email,.tel {
-		font-size: 10px;
-	}
+    .nav__link--logo{
+        width:70px;
+    }
 
+    .fitnessclub{
+        font-size:35px !important;
+    }
+
+    .contenedor__section {
+        h1  {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .container__footer--derechos,.email, .tel {
+        font-size: 10px;
+    }
 }
+
 @media screen and (max-width: 400px) {
-	.nav__titulo {
-		font-size: 30px !important;
-	}
+    .fitnessclub{
+        font-size:30px !important;
+    }
 }
-

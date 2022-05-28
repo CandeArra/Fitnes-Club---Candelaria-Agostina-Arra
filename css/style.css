@@ -14,14 +14,14 @@ main {
 /*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
 .grid-container {
   display: grid;
-  grid-template-areas: "header"
- "main"
- "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto;
   grid-template-columns: 1fr;
   height: 100%;
   width: 100%; }
 
+/*general*/
+/*variables*/
 /*secciones del index*/
 /*header*/
 .cabecera {
@@ -117,7 +117,7 @@ main {
   height: 100%;
   width: 100%;
   /*hijo*/
-  }
+  /*hijo*/ }
   .contenedor__section h1 {
     font-size: 90px;
     font-family: 'Bebas Neue', cursive;
@@ -128,8 +128,6 @@ main {
     padding: 20px;
     font-weight: bold;
     text-align: center; }
-
-  /*hijo*/ 
   .contenedor__section h2 {
     font-family: 'Bebas Neue', cursive;
     font-style: oblique;
@@ -150,7 +148,6 @@ main {
   padding: 30px;
   transition: all 0.5s;
   /*aplica transformaciones al boton Contactanos*/ }
-
   .contenedor__section__boton:hover {
     transform: scale(1.1); }
 
@@ -186,9 +183,7 @@ main {
       text-shadow: 2px 2px #000; }
 
 /*termina main del index*/
-
 /*footer*/
-
 /*padre*/
 .container__footer {
   grid-area: footer;
@@ -204,14 +199,13 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    /*hijo*/
+    /*hijo*/
     /*hijo*/ }
     .container__footer div .container__footer--derechos {
-      font-size: 20px;
       font-family: "Montserrat", sans-serif;
       font-weight: bold; }
     .container__footer div .email, .container__footer div .tel {
-      font-size: 19px;
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       font-weight: bold; }
@@ -219,9 +213,9 @@ main {
       color: #fff;
       font-family: "Rajdhani", sans-serif;
       text-transform: uppercase;
-      font-size: 60px;
       text-decoration: none;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 60px; }
       .container__footer div .footer__titulo span {
         color: #af0e2f;
         animation-name: spanTitulo;
@@ -237,36 +231,30 @@ main {
     color: #af0e2f; } }
 
 /*termina footer del index*/
-/*@media queries*/
 @media screen and (max-width: 1480px) {
   .nav__link--logo {
     width: 95px; }
-  .nav__titulo {
+  .fitnessclub {
     font-size: 50px; }
-  .footer__titulo {
-    font-size: 50px; }
-  .container__section {
-    justify-content: flex-end; }
   .ul__container__a {
     font-size: 1.8rem;
     color: #fff; }
-  .contenedor__section h1 {
-    font-size: 80px; }
-  .contenedor__section h2 {
-    font-size: 50px; }
+  .contenedor__section {
+    justify-content: flex-end; }
+    .contenedor__section h1 {
+      font-size: 80px; }
+    .contenedor__section h2 {
+      font-size: 50px; }
   .contenedor__section__boton {
     font-size: 25px;
     padding: 25px; }
-  .container__footer--derechos {
-    font-size: 17px; }
-  .email, .tel {
-    font-size: 17px; } 
-}
+  .container__footer--derechos, .email, .tel {
+    font-size: 17px; } }
 
 @media screen and (max-width: 1270px) {
   .nav__link--logo {
     width: 90px; }
-  .nav__titulo, .footer__titulo {
+  .fitnessclub {
     font-size: 45px !important; }
   .ul__container__a {
     font-size: 1.6rem;
@@ -278,19 +266,16 @@ main {
   .container__footer--derechos, .email, .tel {
     font-size: 14px; }
   .fa-brands {
-    font-size: 60px !important; } 
-}
+    font-size: 60px !important; } }
 
 @media screen and (max-width: 1150px) {
   .contenedorNav {
-    justify-content: center !important; } 
-}
+    justify-content: center !important; } }
 
 @media screen and (max-width: 1116px) {
   .nav__link--logo {
     width: 90px;
-    margin: 0px; } 
-}
+    margin: 0px; } }
 
 @media screen and (max-width: 900px) {
   .ul__container__a {
@@ -308,11 +293,9 @@ main {
   .container__footer--derechos, .email, .tel {
     font-size: 12px; }
   .fa-brands {
-    font-size: 50px; }
-  .fitnessclub {
-    font-size: 40px !important; } 
-}
+    font-size: 50px; } }
 
+/*vista de tablet*/
 @media screen and (max-width: 700px) {
   .nav__link--logo {
     width: 80px; }
@@ -325,24 +308,23 @@ main {
   .contenedor__section__boton {
     font-size: 17px;
     padding: 17px; }
+  .container__footer--derechos, .email, .tel {
+    font-size: 12px; }
   .fa-brands {
-    font-size: 45px !important; }
-}
+    font-size: 45px !important; } }
 
 @media screen and (max-width: 480px) {
   .nav__link--logo {
     width: 70px; }
-  .nav__titulo {
+  .fitnessclub {
     font-size: 35px !important; }
   .contenedor__section h1 {
     font-size: 40px; }
   .contenedor__section h2 {
     font-size: 30px; }
   .container__footer--derechos, .email, .tel {
-    font-size: 10px; } 
-}
+    font-size: 10px; } }
 
 @media screen and (max-width: 400px) {
-  .nav__titulo {
-    font-size: 30px !important; } 
-}
+  .fitnessclub {
+    font-size: 30px !important; } }

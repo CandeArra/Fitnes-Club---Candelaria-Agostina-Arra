@@ -33,7 +33,7 @@ main {
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Inconsolata&family=Lato&family=Montserrat:ital,wght@1,200&family=Ms+Madi&family=Mukta:wght@300&family=Orelega+One&family=Oswald&family=Rajdhani:wght@600&family=Sen&family=Square+Peg&display=swap');
 
 /*secciones del index*/
-@import "header";
-@import "main";
-@import "footer";
-@import "responsiveDesign";
+@import "_header";
+@import "_main";
+@import "_footer";
+@import "_responsiveDesign";
