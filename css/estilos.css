@@ -1599,7 +1599,8 @@ textarea {
         width: 30%;
     }
 }
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 436px) {
     .titulo--contacto, .subtitulo--contacto {
         font-size: 25px;
         letter-spacing: 4px;
@@ -1609,6 +1610,7 @@ textarea {
         font-size: 40px;
     }
 }
+
 @media screen and (max-width: 380px) {
     form {
         margin: 30px 30px ;
