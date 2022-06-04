@@ -1423,13 +1423,10 @@ article h2 {
 
 /*MAIN*/
 .main__contacto {
-    grid-area:main ;
-    
-       
-    
+    grid-area:main;
 }
 
-.main__contacto h1, .main__contacto h2 {
+.titulo--contacto, .subtitulo--contacto {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -1440,19 +1437,17 @@ article h2 {
     margin-top: 20px;
 }
 
-.main__contacto h1 {
+.titulo--contacto {
     margin-top: 10px;
     font-size: 90px;
-}
-
-.section__contacto{
-    margin: 30px ;
 }
 
 form {
     background: #e28686;
     border: solid 4px #000;
-    padding: 20px;
+    border-radius: 0.5%;
+    padding: 30px;
+    margin: 30px 100px ;
 }
 
 form div {
@@ -1488,7 +1483,6 @@ form div {
     background-color: #87021f;
     color: #fff;
     border: none;
-    min-width: 125px;
 }
 .contacto__input:hover{
     background-color: #e0e0e0;
@@ -1517,109 +1511,128 @@ textarea {
     grid-area: footer;
 }
 
-
 @media screen and (max-width: 1290px) {
 
-    .main__contacto h1, .main__contacto h2 {
+    .titulo--contacto, .subtitulo--contacto {
         font-size: 40px;
         letter-spacing: 8px;
     }
 
-    .main__contacto h1 {
-        margin-top: 10px;
+    .titulo--contacto{
         font-size: 70px;
     }
-
-
 }
-
+@media screen and (max-width: 786px) {
+    .boton {
+        padding: 10px;    
+        width: 25%;
+        font-size: 1rem;
+    }
+}
 @media screen and (max-width: 700px) {
 
-    .main__contacto h1, .main__contacto h2 {
+    .titulo--contacto, .subtitulo--contacto {
         font-size: 35px;
         margin:20px 15px;
     }
 
-    .main__contacto h1 {
+    .titulo--contacto {
         margin: 10px 0;
         font-size: 55px;
     }
 
     .contacto__input {
-        font-size: 1.1rem;
-    } 
-}
-
-@media screen and (max-width: 550px) {
-    form {
-        padding: 15px;
-    }
-    .main__contacto h2 {
-        font-size: 26px;
-    }
-
-    .main__contacto h1 {
-        font-size: 50px;
-    }
-
-    .section__contacto__input {
         font-size: 1rem;
     }
 
+    .main__contacto{
+        width: 100vw;
+    }
+    
+    .checkbox,.label--sede {
+        font-size: 1.1rem;
+    }
+}
 
+@media screen and (max-width: 570px) {
+
+    .titulo--contacto, .subtitulo--contacto {
+        margin:10px 15px;
+        font-size: 30px;
+    }
+
+    .titulo--contacto {
+        font-size: 50px;
+    }
+
+    form {
+        margin: 30px 70px ;
+    }
+
+    .contacto__input{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .checkbox,.label--sede {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
 
-    .main__contacto h2 {
-        font-size: 20px;
+    .titulo--contacto, .subtitulo--contacto {
+        margin:10px 15px;
+        font-size: 30px;
+        letter-spacing: 6px;
     }
 
-    .main__contacto h1 {
-        font-size: 40px;
-    }
-
-    .section__contacto__input { 
-        font-size: 0.8rem;
-    }
-
-}
-
-@media screen and (max-width: 430px) {
-
-    .main__contacto h2 {
-        font-size: 20px;
-    }
-
-    .main__contacto h1 {
-        font-size: 40px;
-    }
-
-
-
-}
-
-@media screen and (max-width: 595px) {
-    .main__contacto h2 {
-        font-size: 25px;
-    }
-
-    .main__contacto h1 {
+    .titulo--contacto {
         font-size: 45px;
     }
 
-    .checkbox,.section__contacto__input{
-        font-size: 1rem;
+    form {
+        margin: 30px 50px ;
     }
 
-    .botones{
-        font-size: 0.7rem;
-        padding: 12px;
+    .boton {
+        width: 30%;
     }
 }
-
-
 @media screen and (max-width: 400px) {
+    .titulo--contacto, .subtitulo--contacto {
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
 
+    .titulo--contacto {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 380px) {
+    form {
+        margin: 30px 30px ;
+    }
 
-} 
+    .boton {
+        width: 30%;
+        margin: 0px 15px;
+    }
+}
+@media screen and (max-width: 320px) {
+    form {
+        margin:20px ;
+    }
+
+    .subtitulo--contacto {
+        font-size: 20px;
+    }
+
+    .titulo--contacto {
+        font-size: 35px;
+    }
+
+    .boton {
+        width: 40%;
+    }
+}
