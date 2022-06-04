@@ -14,7 +14,9 @@ main {
 /*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
 .grid-container {
   display: grid;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header"
+                        "main"
+                        "footer";
   grid-template-rows: auto;
   grid-template-columns: 1fr;
   height: 100%;

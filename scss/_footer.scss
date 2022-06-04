@@ -3,19 +3,22 @@
 /*padre*/
 .container__footer {
 	grid-area: footer;
-	background-color: #000000;
-	color:$colorBlanco;
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+	background-color:map-get($colores,negro);
+	color:map-get($colores,blanco);
+	// display: flex;
+	// justify-content: space-evenly;
+	// flex-wrap: wrap;
+    @include flexbox(row,space-evenly,flex-start,wrap);
 
     /*hijo*/
 	div {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		// display: flex;
+		// flex-wrap: wrap;
+		// flex-direction: column;
+		// align-items: center;
+		// justify-content: center;
+        @include flexbox(column,center,center,wrap);
+
 
         /*hijo*/
         .container__footer--derechos {
@@ -32,7 +35,7 @@
 
         /*hijo*/
         .footer__titulo {
-            color: $colorBlanco;
+            color:map-get($colores,blanco);
             font-family: $textosTituloUl;
             text-transform: uppercase;
             text-decoration: none;
@@ -40,20 +43,20 @@
             font-size:60px;
 
             span {
-                color: $colorPagina;
+                color: map-get($colores,blanco);
                 animation-name: spanTitulo;
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
         
                 @keyframes spanTitulo {
                     0% {
-                        color: $colorPagina;
+                        color: map-get($colores,rosaFuerte);
                     }
                     50% {
-                        color: #761161;
+                        color:map-get($colores,violeta);
                     }
                     100% {
-                        color: $colorPagina;
+                        color: map-get($colores,rosaFuerte);
                     }
                 }
 	        }

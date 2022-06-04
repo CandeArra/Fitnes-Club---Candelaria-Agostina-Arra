@@ -1,14 +1,15 @@
 /*header*/
 .cabecera {
 	grid-area: header;
-	background-color: $colorNegro;
-	border-bottom: solid 4px $colorPagina;
+	background-color:map-get($colores,negro);
+	border-bottom: solid 4px map-get($colores,rosaFuerte);
 }
 
 /*navegacion*/
 .navegador {
-	display: flex;
-	align-items: center;
+	// display: flex;
+	// align-items: center;
+	@include flexbox(row,flex-start,center,nowrap);
 	margin-left: 50px;
 }
 
@@ -18,15 +19,16 @@
 }
 
 .titulos__container {
-	display: flex;
-	align-items: center;
+	// display: flex;
+	// align-items: center;
+	@include flexbox(row,flex-start,center,nowrap);
 }
 
 .nav__link--logo {
 	padding: 10px;
 	margin-right: 30px;
 	width: 105px;
-	border: solid 3px $colorBlanco;
+	border: solid 3px map-get($colores,rosaFuerte);
 	border-radius: 50%;
 	background: linear-gradient(to right, #af0206, #761161);
 }
@@ -35,7 +37,7 @@
 
 /*padre*/
 .nav__titulo {
-	color: $colorBlanco;
+	color: map-get($colores,blanco);
 	font-family: $textosTituloUl;
 	text-transform: uppercase;
 	font-size: 60px;
@@ -44,26 +46,26 @@
 
 	/*hijo*/
     span {
-        color: $colorPagina;
+        color: map-get($colores,rosaFuerte);
         animation-name: spanTitulo;
         animation-duration: 2s;
         animation-iteration-count: infinite;
 
 		@keyframes spanTitulo {
 			0% {
-				color: $colorPagina;
+				color: map-get($colores,rosaFuerte);
 			}
 			50% {
 				color: #761161;
 			}
 			100% {
-				color: $colorPagina;
+				color: map-get($colores,rosaFuerte);
 			}
 		}
     }
 
     &:hover {
-		color:$colorBlanco;
+		color:map-get($colores,blanco);
 	}
 }
 
@@ -76,15 +78,15 @@
 	margin: 10px;
 	padding-right: 30px;
 	font-size: 2rem;
-	color: $colorBlanco;
+	color: map-get($colores,blanco);
 	font-family: $textosTituloUl;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: bold;
-	text-shadow: 2px 2px $colorPagina;
+	text-shadow: 2px 2px map-get($colores,rosaFuerte);
     
     &:hover {
-        color: $colorPagina;
+        color: map-get($colores,rosaFuerte);
         text-shadow: none;
     }
 }
