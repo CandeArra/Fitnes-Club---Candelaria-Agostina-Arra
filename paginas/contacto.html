@@ -58,9 +58,44 @@
 
             <h2>Si tenes alguna consulta, no dudes en hablarnos!</h2> 
             <h1>CONTACTANOS</h1>  
+            <section  class="section__contacto">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control contacto__input" id="usr" placeholder="Nombre completo">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control contacto__input" id="pwd" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control contacto__input" rows="5" id="comment" placeholder="Escriba su mensaje"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="sel1" class="label--sede">Sede:</label>
+                        <select class="form-control contacto__input" id="sel1">
+                          <option>Palermo</option>
+                          <option>Olivos</option>
+                          <option>Flores</option>
+                          <option>Caballito</option>
+                          <option>Lomas de Zamora</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label class="checkbox-inline checkbox">Acepto terminos y condiciones<input type="checkbox" value="" class="boton__checkbox"></label>
+                      </div>
 
-            <section class="section__contacto">   
-                <form action=""> <!--vacio aproposito-->
+                      <div class="form-group contacto__botones">
+                        <input type="button" class="form-control boton" id="usr" value="Enviar">
+                        <input type="reset" class="form-control boton" id="pwd" value="Limpiar">
+
+                    
+                </form>
+                
+            </section>
+            
+        </main> 
+
+            <!-- <section class="section__contacto">   
+                <form action="">vacio aproposito
     
                     <div>
                         <input type="text" placeholder="Nombre completo" class="section__contacto__input">
@@ -104,9 +139,11 @@
             <div class="logos-redes">
                 <a href="https://instagram.com" target= "_blank"><i class="fa-brands fa-instagram"></i></a>  
                 <a href="https://facebook.com" target= "_blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-        </main>
+            </div>-->
+
         <!-- termina el main -->
+
+
         
         <!-- pie de pagina -->
         <footer class="container__footer footer--contacto">

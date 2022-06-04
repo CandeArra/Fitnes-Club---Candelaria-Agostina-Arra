@@ -1424,6 +1424,9 @@ article h2 {
 /*MAIN*/
 .main__contacto {
     grid-area:main ;
+    
+       
+    
 }
 
 .main__contacto h1, .main__contacto h2 {
@@ -1443,101 +1446,70 @@ article h2 {
 }
 
 .section__contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0px 100px;
-    background: #e28686;
-    border: solid 6px #000;
-    padding: 6px;
+    margin: 30px ;
 }
 
 form {
-    text-align: center;
-    flex: 1;
-    padding: 30px;
-    width: 100%;
+    background: #e28686;
+    border: solid 4px #000;
+    padding: 20px;
 }
 
-.section__contacto__input {
-    width: 100%;
-    padding: 9px;
-    margin:5px 0;
-    font-size: 1.2rem;
-    border-left: solid 4px #af0e2f;
+form div {
+    margin: 10px 0 ;
 }
 
-.section__contacto__input:hover{
+.contacto__input{
+    padding: 15px;
+    font-size: 1.3rem;
+    border-left: #89243a solid 4px;
+}
+
+.checkbox,.label--sede {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.boton__checkbox {
+    margin-left: 10px;
+}
+
+.contacto__botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.boton {
+    padding: 15px;    
+    margin: 0px 20px;
+    width: 20%;
+    font-size: 1.3rem;
+    background-color: #87021f;
+    color: #fff;
+    border: none;
+    min-width: 125px;
+}
+.contacto__input:hover{
     background-color: #e0e0e0;
 }
 
 textarea {
     height: 250px;
-    width: 100%;
-    resize: none;
+    resize: none; 
 }
 
-.checkbox {
-    border: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #000;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
+.boton:hover{
+    background-color: #b3304a; 
+} 
 
-.checkbox:hover {
-    background-color: #e28686;
-}
-
-.section__contacto--boton {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-wrap: wrap;
-}
-
-.botones{
-    width: 70%;
-    margin:15px;
-    background-color: #af0e2f;
+.boton:active,.boton:focus,.boton:active{
+    background: #87021f;
+    border-color: none;
     color: #fff;
-    padding: 20px;
-    font-size: 1.1rem;
-    border: 2px solid #000;
+    outline:0;
+    box-shadow:0;
 }
-
-.botones:hover{
-    background-color: #b3304a;
-}
-
-.container__img--contacto {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.container__img--contacto img {
-    width: 100%;
-}
-
-.img-container {
-    background-color: #af0e2f;
-    padding: 60px;
-    border-radius: 60%;
-    border: solid 6px #000;
-    width: 70%;
-    display: flex;
-    justify-content:center;
-    min-width:240px;
-}
-
-.img {
-    min-width: 150px;
-}
-
 /*footer*/
 .footer--contacto {
     border-top: 4px solid #af0e2f;
@@ -1558,6 +1530,7 @@ textarea {
         font-size: 70px;
     }
 
+
 }
 
 @media screen and (max-width: 700px) {
@@ -1572,14 +1545,9 @@ textarea {
         font-size: 55px;
     }
 
-    .section__contacto__input {
-        padding: 7px;
+    .contacto__input {
         font-size: 1.1rem;
     } 
-
-    .main__contacto {
-        width: 100vw; 
-    }
 }
 
 @media screen and (max-width: 550px) {
@@ -1598,14 +1566,6 @@ textarea {
         font-size: 1rem;
     }
 
-    .img-container {
-        min-width:200px;
-        border: 4px solid #000;
-    }
-    
-    .img {
-        min-width: 100px;
-    }
 
 }
 
@@ -1623,10 +1583,6 @@ textarea {
         font-size: 0.8rem;
     }
 
-    .checkbox {
-        font-size: 1rem;
-    }  
-
 }
 
 @media screen and (max-width: 430px) {
@@ -1639,13 +1595,7 @@ textarea {
         font-size: 40px;
     }
 
-    .img-container {
-        min-width:120px;
-    }
-    
-    .img {
-        min-width: 100px;
-    }
+
 
 }
 
@@ -1670,16 +1620,6 @@ textarea {
 
 
 @media screen and (max-width: 400px) {
-    .img-container {
-        min-width:100px;
-    }
-    
-    .img {
-        min-width: 80px;
-    }
 
-    .checkbox {
-        font-size: 0.8rem;
-    }
 
-}
+} 
