@@ -5,10 +5,11 @@
 	border-bottom: solid 4px map-get($colores,rosaFuerte);
 }
 
+.contenedorNav {
+	padding: 0px
+}
 /*navegacion*/
 .navegador {
-	// display: flex;
-	// align-items: center;
 	@include flexbox(row,flex-start,center,nowrap);
 	margin-left: 50px;
 }
@@ -19,8 +20,6 @@
 }
 
 .titulos__container {
-	// display: flex;
-	// align-items: center;
 	@include flexbox(row,flex-start,center,nowrap);
 }
 
@@ -28,15 +27,14 @@
 	padding: 10px;
 	margin-right: 30px;
 	width: 105px;
-	border: solid 3px map-get($colores,rosaFuerte);
+	border: solid 3px map-get($colores,blanco);
 	border-radius: 50%;
 	background: linear-gradient(to right, #af0206, #761161);
 }
 
 /*nombre del gym*/
-
 /*padre*/
-.nav__titulo {
+.fitnessclub {
 	color: map-get($colores,blanco);
 	font-family: $textosTituloUl;
 	text-transform: uppercase;

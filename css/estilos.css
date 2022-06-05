@@ -245,15 +245,12 @@ nav ul li a:hover{
 }
 
 .container__footer--derechos {
-    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
 .email, .tel {
-    font-size: 19px;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
     font-weight: bold;
 }
 

@@ -8,15 +8,10 @@ body {
   height: 100vh;
   background: linear-gradient(to right, #d53369, #be2a04); }
 
-main {
-  width: 100vw; }
-
 /*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
 .grid-container {
   display: grid;
-  grid-template-areas: "header"
-                        "main"
-                        "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto;
   grid-template-columns: 1fr;
   height: 100%;
@@ -31,10 +26,16 @@ main {
   background-color: #000;
   border-bottom: solid 4px #af0e2f; }
 
+.contenedorNav {
+  padding: 0px; }
+
 /*navegacion*/
 .navegador {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
   margin-left: 50px; }
 
 .nav {
@@ -43,7 +44,10 @@ main {
 
 .titulos__container {
   display: flex;
-  align-items: center; }
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap; }
 
 .nav__link--logo {
   padding: 10px;
@@ -55,7 +59,7 @@ main {
 
 /*nombre del gym*/
 /*padre*/
-.nav__titulo {
+.fitnessclub {
   color: #fff;
   font-family: "Rajdhani", sans-serif;
   text-transform: uppercase;
@@ -63,7 +67,7 @@ main {
   text-decoration: none;
   font-weight: bold;
   /*hijo*/ }
-  .nav__titulo span {
+  .fitnessclub span {
     color: #af0e2f;
     animation-name: spanTitulo;
     animation-duration: 2s;
@@ -76,7 +80,7 @@ main {
     color: #761161; }
   100% {
     color: #af0e2f; } }
-  .nav__titulo:hover {
+  .fitnessclub:hover {
     color: #fff; }
 
 /*cambia constantemente los colores del nombre del gimnasio*/
@@ -106,39 +110,34 @@ main {
   background-size: cover;
   border-bottom: solid 4px #af0e2f;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap; }
 
 .contenedor__section {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100%;
   width: 100%;
   /*hijo*/
   /*hijo*/ }
-  .contenedor__section h1 {
+  .contenedor__section h1, .contenedor__section h2 {
     font-size: 90px;
-    font-family: 'Bebas Neue', cursive;
-    font-style: oblique;
+    font-family: "Bebas Neue", cursive;
     letter-spacing: 12px;
     text-shadow: 2px 2px #af0e2f;
     color: #000;
-    padding: 20px;
+    margin-top: 50px;
+    padding: 30px;
     font-weight: bold;
     text-align: center; }
   .contenedor__section h2 {
-    font-family: 'Bebas Neue', cursive;
-    font-style: oblique;
-    letter-spacing: 12px;
-    text-shadow: 2px 2px #af0e2f;
-    color: #000;
+    margin-top: 0px;
     padding: 20px;
-    font-weight: bold;
-    text-align: center;
     font-size: 60px; }
 
 .contenedor__section__boton {
@@ -156,10 +155,11 @@ main {
 /*logos de redes sociales*/
 .logos-redes {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 100%;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%; }
   .logos-redes .fa-brands {
     color: #000;
     text-shadow: 2px 2px #fff;
@@ -189,48 +189,27 @@ main {
 /*padre*/
 .container__footer {
   grid-area: footer;
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
   /*hijo*/ }
   .container__footer div {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    /*hijo*/
+    align-items: center;
+    flex-wrap: wrap;
     /*hijo*/
     /*hijo*/ }
-    .container__footer div .container__footer--derechos {
+    .container__footer div .container__footer--derechos, .container__footer div .email, .container__footer div .tel {
       font-family: "Montserrat", sans-serif;
       font-weight: bold; }
     .container__footer div .email, .container__footer div .tel {
-      font-family: "Montserrat", sans-serif;
-      text-transform: uppercase;
       font-weight: bold; }
-    .container__footer div .footer__titulo {
-      color: #fff;
-      font-family: "Rajdhani", sans-serif;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 60px; }
-      .container__footer div .footer__titulo span {
-        color: #af0e2f;
-        animation-name: spanTitulo;
-        animation-duration: 2s;
-        animation-iteration-count: infinite; }
-
-@keyframes spanTitulo {
-  0% {
-    color: #af0e2f; }
-  50% {
-    color: #761161; }
-  100% {
-    color: #af0e2f; } }
 
 /*termina footer del index*/
 @media screen and (max-width: 1480px) {
@@ -243,29 +222,29 @@ main {
     color: #fff; }
   .contenedor__section {
     justify-content: flex-end; }
-    .contenedor__section h1 {
+    .contenedor__section h1, .contenedor__section h2 {
       font-size: 80px; }
     .contenedor__section h2 {
       font-size: 50px; }
   .contenedor__section__boton {
     font-size: 25px;
     padding: 25px; }
-  .container__footer--derechos, .email, .tel {
+  .container__footer--derechos, .container__footer div .email, .container__footer div .tel, .email, .tel {
     font-size: 17px; } }
 
 @media screen and (max-width: 1270px) {
   .nav__link--logo {
     width: 90px; }
   .fitnessclub {
-    font-size: 45px !important; }
+    font-size: 45px; }
   .ul__container__a {
     font-size: 1.6rem;
     padding-right: 15px; }
-  .contenedor__section h1 {
+  .contenedor__section h1, .contenedor__section h2 {
     font-size: 75px; }
   .contenedor__section h2 {
     font-size: 45px; }
-  .container__footer--derechos, .email, .tel {
+  .container__footer--derechos, .container__footer div .email, .container__footer div .tel, .email, .tel {
     font-size: 14px; }
   .fa-brands {
     font-size: 60px !important; } }
@@ -283,7 +262,7 @@ main {
   .ul__container__a {
     font-size: 1.6rem;
     padding-right: 15px; }
-  .contenedor__section h1 {
+  .contenedor__section h1, .contenedor__section h2 {
     font-size: 70px;
     padding: 10px; }
   .contenedor__section h2 {
@@ -292,16 +271,14 @@ main {
   .contenedor__section__boton {
     font-size: 20px;
     padding: 20px; }
-  .container__footer--derechos, .email, .tel {
-    font-size: 12px; }
-  .fa-brands {
-    font-size: 50px; } }
+  .container__footer--derechos, .container__footer div .email, .container__footer div .tel, .email, .tel {
+    font-size: 12px; } }
 
 /*vista de tablet*/
 @media screen and (max-width: 700px) {
   .nav__link--logo {
     width: 80px; }
-  .contenedor__section h1 {
+  .contenedor__section h1, .contenedor__section h2 {
     font-size: 50px;
     text-shadow: 1px 1px #af0e2f; }
   .contenedor__section h2 {
@@ -310,7 +287,7 @@ main {
   .contenedor__section__boton {
     font-size: 17px;
     padding: 17px; }
-  .container__footer--derechos, .email, .tel {
+  .container__footer--derechos, .container__footer div .email, .container__footer div .tel, .email, .tel {
     font-size: 12px; }
   .fa-brands {
     font-size: 45px !important; } }
@@ -319,14 +296,20 @@ main {
   .nav__link--logo {
     width: 70px; }
   .fitnessclub {
-    font-size: 35px !important; }
-  .contenedor__section h1 {
+    font-size: 35px; }
+  .contenedor__section h1, .contenedor__section h2 {
     font-size: 40px; }
   .contenedor__section h2 {
     font-size: 30px; }
-  .container__footer--derechos, .email, .tel {
+  .container__footer--derechos, .container__footer div .email, .container__footer div .tel, .email, .tel {
     font-size: 10px; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 390px) {
+  .contenedorNav {
+    justify-content: flex-start !important; }
   .fitnessclub {
-    font-size: 30px !important; } }
+    font-size: 30px; }
+  .boton-barras {
+    display: flex;
+    width: 100%;
+    justify-content: center; } }

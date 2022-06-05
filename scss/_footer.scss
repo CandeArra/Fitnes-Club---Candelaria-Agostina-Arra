@@ -5,18 +5,10 @@
 	grid-area: footer;
 	background-color:map-get($colores,negro);
 	color:map-get($colores,blanco);
-	// display: flex;
-	// justify-content: space-evenly;
-	// flex-wrap: wrap;
-    @include flexbox(row,space-evenly,flex-start,wrap);
+    @include flexbox(row,space-evenly,center,wrap);
 
     /*hijo*/
 	div {
-		// display: flex;
-		// flex-wrap: wrap;
-		// flex-direction: column;
-		// align-items: center;
-		// justify-content: center;
         @include flexbox(column,center,center,wrap);
 
 
@@ -28,38 +20,8 @@
 
         /*hijo*/
         .email, .tel {
-            font-family: $textosFooter;
-            text-transform: uppercase;
+            @extend .container__footer--derechos;
             font-weight: bold;
-        }
-
-        /*hijo*/
-        .footer__titulo {
-            color:map-get($colores,blanco);
-            font-family: $textosTituloUl;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: bold;    
-            font-size:60px;
-
-            span {
-                color: map-get($colores,blanco);
-                animation-name: spanTitulo;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-        
-                @keyframes spanTitulo {
-                    0% {
-                        color: map-get($colores,rosaFuerte);
-                    }
-                    50% {
-                        color:map-get($colores,violeta);
-                    }
-                    100% {
-                        color: map-get($colores,rosaFuerte);
-                    }
-                }
-	        }
         }
     }
 }
