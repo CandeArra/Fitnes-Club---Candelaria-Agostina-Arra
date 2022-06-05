@@ -6,7 +6,7 @@
 }
 
 .contenedorNav {
-	padding: 0px
+	padding: 0px;
 }
 /*navegacion*/
 .navegador {
@@ -54,7 +54,7 @@
 				color: map-get($colores,rosaFuerte);
 			}
 			50% {
-				color: #761161;
+				color: map-get($colores,violeta);
 			}
 			100% {
 				color: map-get($colores,rosaFuerte);
