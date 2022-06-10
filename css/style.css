@@ -9,7 +9,6 @@ body {
   background: linear-gradient(to right, #d53369, #be2a04); }
 
 /*general*/
-/*map-get*/
 .grid-container {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -265,10 +264,10 @@ footer {
     width: 80px; }
   .contenedor__section h1, .contenedor__section h2 {
     font-size: 50px;
-    text-shadow: 1px 1px #af0e2f; }
+    text-shadow: 1px 1px; }
   .contenedor__section h2 {
     font-size: 35px;
-    text-shadow: 1px 1px #af0e2f; }
+    text-shadow: 1px 1px; }
   .contenedor__section__boton {
     font-size: 17px;
     padding: 17px; }
@@ -397,7 +396,6 @@ footer {
   transition: all 0.5s; }
   .section2__div--boton:hover {
     transform: scale(1.2);
-    color: #af0e2f;
     font-weight: bold; }
 
 #video {
@@ -756,13 +754,13 @@ article {
   width: 26rem;
   height: 33rem;
   border: 2px solid #fff;
-  background-image: linear-gradient(to bottom, #af0e2f, #0a0a0a);
+  background-image: linear-gradient(to bottom, , );
   margin: 30px;
   transition: all .2s;
   /*hace zoom y cambia de color de fondo*/ }
   .div__entrenadores:hover {
     transform: scale(1.1);
-    background-image: linear-gradient(to bottom, #af374f, #0a0a0a); }
+    background-image: linear-gradient(to bottom, , ); }
   .div__entrenadores img {
     width: 18rem;
     height: 18rem;
@@ -855,10 +853,9 @@ article {
   font-family: "Bebas Neue";
   text-shadow: 1px 1px #fff;
   color: #000;
-  margin-top: 20px; }
+  margin: 20px; }
 
 .titulo--contacto {
-  margin-top: 10px;
   font-size: 90px; }
 
 form {
@@ -909,90 +906,34 @@ textarea {
   height: 250px;
   resize: none; }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 825px) {
   .subtitulo--contacto, .titulo--contacto {
-    font-size: 40px;
-    letter-spacing: 8px; }
+    font-size: 40px; }
   .titulo--contacto {
-    font-size: 70px;
-    letter-spacing: 8px;
-    font-size: 70px; } }
-
-@media screen and (max-width: 786px) {
-  .contacto__botones input {
-    padding: 10px;
-    width: 25%;
-    font-size: 1rem; } }
+    font-size: 70px; }
+  form {
+    margin: 30px 80px; } }
 
 @media screen and (max-width: 700px) {
-  .titulo--contacto {
-    font-size: 35px;
-    margin: 20px 15px;
-    margin: 10px 0;
-    font-size: 55px; }
-  .subtitulo--contacto, .titulo--contacto {
-    font-size: 35px;
-    margin: 20px 15px; }
-  .contacto__input {
-    font-size: 1rem; }
-  .checkbox, .label--sede {
-    font-size: 1.1rem; } }
-
-@media screen and (max-width: 570px) {
-  .titulo--contacto {
-    margin: 10px 15px;
-    font-size: 30px;
-    font-size: 50px; }
-  .subtitulo--contacto, .titulo--contacto {
-    margin: 10px 15px;
-    font-size: 30px; }
   form {
     margin: 30px 70px; }
-  .contacto__input {
-    padding: 10px;
-    font-size: 0.9rem; }
-  .checkbox {
-    font-size: 1rem; }
-  .label--sede {
-    font-size: 1rem; } }
-
-@media screen and (max-width: 480px) {
-  .titulo--contacto {
-    margin: 10px 15px;
-    font-size: 30px;
-    letter-spacing: 6px;
-    font-size: 45px; }
   .subtitulo--contacto, .titulo--contacto {
-    margin: 10px 15px;
-    font-size: 30px;
-    letter-spacing: 6px; }
-  form {
-    margin: 30px 50px; }
-  .boton {
-    width: 30%; } }
-
-@media screen and (max-width: 436px) {
-  .titulo--contacto {
-    font-size: 25px;
-    letter-spacing: 4px;
-    font-size: 40px; }
-  .subtitulo--contacto, .titulo--contacto {
-    font-size: 25px;
-    letter-spacing: 4px; } }
-
-@media screen and (max-width: 380px) {
-  form {
-    margin: 30px 30px; }
-  .boton {
-    width: 30%;
-    margin: 0px 15px; } }
-
-@media screen and (max-width: 320px) {
-  form {
-    margin: 20px; }
-  .subtitulo--contacto, .titulo--contacto {
-    font-size: 20px; }
-  .titulo--contacto {
     font-size: 35px; }
-  .boton {
-    width: 40%; } }
+  .titulo--contacto {
+    font-size: 60px; }
+  .contacto__input {
+    font-size: 1.2rem; }
+  .checkbox, .label--sede {
+    font-size: 1.2rem; }
+  .contacto__botones input {
+    padding: 12px;
+    width: 25%;
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 645px) {
+  form {
+    margin: 30px 60px; } }
+
+@media screen and (max-width: 575px) {
+  form {
+    margin: 30px 50px; } }
