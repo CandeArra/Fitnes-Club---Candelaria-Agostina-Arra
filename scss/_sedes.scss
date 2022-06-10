@@ -91,6 +91,8 @@ article {
 #img {
 	@include flexbox(row,center,center,wrap);
     margin-bottom:30px;
+	width:50%;
+
 
     img {
         width: 80%;
@@ -99,12 +101,11 @@ article {
 
 #parrafo {
 	@include flexbox(row,center,center,wrap);
-
+	width:50%;
     p {
         font-size: 2rem;
         width: 90%;
         font-family: map-get($textos,texto6);
-        font-style: italic;
         color: map-get($colores,blanco);
         border: 2px solid map-get($colores,negro);
         background-color: map-get($colores,negro);
@@ -119,8 +120,8 @@ article {
 		font-size: 50px;
 	}
 	.card {
-		width: 300px;
-		height: 200px;
+		width: 350px;
+		height: 250px;
 		h3 {
 			font-size: 35px;
 			margin: 10px 0;
@@ -140,33 +141,20 @@ article {
 		}
 	}
 	#parrafo {
+		width:100%;
 		p {
 			font-size: 1.8rem;
 		}
 	}
-	.fa-brands {
-		font-size: 70px;
+
+	#img{
+		width:100%;
+
 	}
+
 }
 
-@media screen and (max-width: 1128px) {
-	.card {
-		width: 280px;
-		height: 180px;
-		h3 {
-			font-size: 30px;
-			margin: 5px 0;
-		}
-		h4 {
-			font-size: 15px;
-			margin: 5px 0;
-		}
-		h5 {
-			font-size: 10px;
-			margin: 5px 0;
-		}
-	}
-}
+
 @media screen and (max-width: 1000px) {
 
 	.titulo--sedes {
@@ -185,22 +173,7 @@ article {
 		font-size: 35px;
 		text-shadow: 1px 1px map-get($colores,blanco);
 	}
-	.card {
-		width: 280px;
-		height: 180px;
-		h3 {
-			font-size: 30px;
-			margin: 5px 0;
-		}
-		h4 {
-			font-size: 15px;
-			margin: 5px 0;
-		}
-		h5 {
-			font-size: 10px;
-			margin: 5px 0;
-		}
-	}
+	
 	#parrafo {
 		p {
 			font-size: 1.4rem;
@@ -221,13 +194,7 @@ article {
 		letter-spacing: 2px;
 		text-shadow: 1px 1px map-get($colores,blanco);
 	}
-	.card {
-		width: 220px;
-		height: 150px;
-		h3 {
-			font-size: 25px;
-		}
-	}
+
 	article {
 		h2 {
 			font-size: 30px;
@@ -248,10 +215,16 @@ article {
 		text-shadow: 1px 0.5px map-get($colores,blanco);
 	}
 	.card {
-		width: 230px;
-		height: 130px;
+		width: 300px;
+		height: 200px;
 		h3 {
+			font-size: 30px;
+		}
+		h4 {
 			font-size: 20px;
+		}
+		h5 {
+			font-size: 18px;
 		}
 	}
 	#parrafo {

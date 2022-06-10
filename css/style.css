@@ -616,7 +616,8 @@ article {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 50%; }
   #img img {
     width: 80%; }
 
@@ -625,12 +626,12 @@ article {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 50%; }
   #parrafo p {
     font-size: 2rem;
     width: 90%;
     font-family: "Gill Sans";
-    font-style: italic;
     color: #fff;
     border: 2px solid #000;
     background-color: #000;
@@ -641,8 +642,8 @@ article {
   .titulo--sedes {
     font-size: 50px; }
   .card {
-    width: 300px;
-    height: 200px; }
+    width: 350px;
+    height: 250px; }
     .card h3, .card h4, .card h5 {
       font-size: 35px;
       margin: 10px 0; }
@@ -654,24 +655,12 @@ article {
       margin: 10px 0; }
   article h2 {
     font-size: 40px; }
-  #parrafo p {
-    font-size: 1.8rem; }
-  .fa-brands {
-    font-size: 70px; } }
-
-@media screen and (max-width: 1128px) {
-  .card {
-    width: 280px;
-    height: 180px; }
-    .card h3, .card h4, .card h5 {
-      font-size: 30px;
-      margin: 5px 0; }
-    .card h4 {
-      font-size: 15px;
-      margin: 5px 0; }
-    .card h5 {
-      font-size: 10px;
-      margin: 5px 0; } }
+  #parrafo {
+    width: 100%; }
+    #parrafo p {
+      font-size: 1.8rem; }
+  #img {
+    width: 100%; } }
 
 @media screen and (max-width: 1000px) {
   .titulo--sedes {
@@ -683,18 +672,6 @@ article {
   .titulo--sedes {
     font-size: 35px;
     text-shadow: 1px 1px #fff; }
-  .card {
-    width: 280px;
-    height: 180px; }
-    .card h3, .card h4, .card h5 {
-      font-size: 30px;
-      margin: 5px 0; }
-    .card h4 {
-      font-size: 15px;
-      margin: 5px 0; }
-    .card h5 {
-      font-size: 10px;
-      margin: 5px 0; }
   #parrafo p {
     font-size: 1.4rem; }
   article h2 {
@@ -706,11 +683,6 @@ article {
     margin: 30px 0px;
     letter-spacing: 2px;
     text-shadow: 1px 1px #fff; }
-  .card {
-    width: 220px;
-    height: 150px; }
-    .card h3, .card h4, .card h5 {
-      font-size: 25px; }
   article h2 {
     font-size: 30px; }
   #parrafo p {
@@ -723,10 +695,14 @@ article {
     letter-spacing: 5px;
     text-shadow: 1px 0.5px #fff; }
   .card {
-    width: 230px;
-    height: 130px; }
+    width: 300px;
+    height: 200px; }
     .card h3, .card h4, .card h5 {
+      font-size: 30px; }
+    .card h4 {
       font-size: 20px; }
+    .card h5 {
+      font-size: 18px; }
   #parrafo p {
     font-size: 1rem; } }
 
@@ -751,11 +727,6 @@ article {
     font-size: 0.7rem; } }
 
 /*seccion nosotros*/
-/*hace zoom y cambia de color de fondo*/
-/*media queries de nosotros*/
-/*vista tablet seccion nosotros*/
-/*vista mobile seccion nosotros*/
-/*termina seccion Sedes*/
 .grid-nosotros {
   grid-template-areas: "header" "main"  "footer"; }
 
@@ -787,7 +758,8 @@ article {
   border: 2px solid #fff;
   background-image: linear-gradient(to bottom, #af0e2f, #0a0a0a);
   margin: 30px;
-  transition: all .2s; }
+  transition: all .2s;
+  /*hace zoom y cambia de color de fondo*/ }
   .div__entrenadores:hover {
     transform: scale(1.1);
     background-image: linear-gradient(to bottom, #af374f, #0a0a0a); }
@@ -808,6 +780,7 @@ article {
     padding: 20px;
     text-align: center; }
 
+/*media queries de nosotros*/
 @media screen and (max-width: 1340px) {
   .main--titulo {
     font-size: 50px; }
@@ -866,36 +839,27 @@ article {
   .main--titulo {
     font-size: 24px; } }
 
-/*MAIN*/
-/*footer*/
+/*termina seccion Sedes*/
 .grid-contacto {
   display: grid;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header"  "main"  "footer"; }
 
 .main__contacto {
   grid-area: main; }
 
-.titulo--contacto {
+.subtitulo--contacto, .titulo--contacto {
   font-size: 50px;
   font-weight: bold;
   text-align: center;
   letter-spacing: 12px;
-  font-family: 'Bebas Neue', cursive;
-  text-shadow: 1px 1px #ffffff;
-  color: #000000;
-  margin-top: 20px;
+  font-family: "Bebas Neue";
+  text-shadow: 1px 1px #fff;
+  color: #000;
+  margin-top: 20px; }
+
+.titulo--contacto {
   margin-top: 10px;
   font-size: 90px; }
-
-.subtitulo--contacto {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 12px;
-  font-family: 'Bebas Neue', cursive;
-  text-shadow: 1px 1px #ffffff;
-  color: #000000;
-  margin-top: 20px; }
 
 form {
   background: #e28686;
@@ -926,58 +890,36 @@ form {
 
 .contacto__botones {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row; }
-
-.boton {
-  padding: 15px;
-  margin: 0px 20px;
-  width: 20%;
-  font-size: 1.3rem;
-  background-color: #87021f;
-  color: #fff;
-  border: none; }
-  .boton:hover {
-    background-color: #b3304a; }
-  .boton:active {
-    background: #87021f;
-    background: #87021f;
-    border-color: none;
-    border-color: none;
+  flex-wrap: nowrap; }
+  .contacto__botones input {
+    padding: 15px;
+    margin: 0px 20px;
+    width: 20%;
+    font-size: 1.3rem;
+    background-color: #87021f;
     color: #fff;
-    color: #fff;
-    outline: 0;
-    outline: 0;
-    box-shadow: 0;
-    box-shadow: 0; }
-  .boton:focus {
-    background: #87021f;
-    border-color: none;
-    color: #fff;
-    outline: 0;
-    box-shadow: 0; }
+    border: none; }
+    .contacto__botones input:hover {
+      background-color: #b3304a; }
 
 textarea {
   height: 250px;
   resize: none; }
 
-.footer--contacto {
-  border-top: 4px solid #af0e2f;
-  padding: 20px;
-  grid-area: footer; }
-
 @media screen and (max-width: 1290px) {
+  .subtitulo--contacto, .titulo--contacto {
+    font-size: 40px;
+    letter-spacing: 8px; }
   .titulo--contacto {
-    font-size: 40px;
+    font-size: 70px;
     letter-spacing: 8px;
-    font-size: 70px; }
-  .subtitulo--contacto {
-    font-size: 40px;
-    letter-spacing: 8px; } }
+    font-size: 70px; } }
 
 @media screen and (max-width: 786px) {
-  .boton {
+  .contacto__botones input {
     padding: 10px;
     width: 25%;
     font-size: 1rem; } }
@@ -988,16 +930,12 @@ textarea {
     margin: 20px 15px;
     margin: 10px 0;
     font-size: 55px; }
-  .subtitulo--contacto {
+  .subtitulo--contacto, .titulo--contacto {
     font-size: 35px;
     margin: 20px 15px; }
   .contacto__input {
     font-size: 1rem; }
-  .main__contacto {
-    width: 100vw; }
-  .checkbox {
-    font-size: 1.1rem; }
-  .label--sede {
+  .checkbox, .label--sede {
     font-size: 1.1rem; } }
 
 @media screen and (max-width: 570px) {
@@ -1005,7 +943,7 @@ textarea {
     margin: 10px 15px;
     font-size: 30px;
     font-size: 50px; }
-  .subtitulo--contacto {
+  .subtitulo--contacto, .titulo--contacto {
     margin: 10px 15px;
     font-size: 30px; }
   form {
@@ -1024,7 +962,7 @@ textarea {
     font-size: 30px;
     letter-spacing: 6px;
     font-size: 45px; }
-  .subtitulo--contacto {
+  .subtitulo--contacto, .titulo--contacto {
     margin: 10px 15px;
     font-size: 30px;
     letter-spacing: 6px; }
@@ -1038,7 +976,7 @@ textarea {
     font-size: 25px;
     letter-spacing: 4px;
     font-size: 40px; }
-  .subtitulo--contacto {
+  .subtitulo--contacto, .titulo--contacto {
     font-size: 25px;
     letter-spacing: 4px; } }
 
@@ -1052,7 +990,7 @@ textarea {
 @media screen and (max-width: 320px) {
   form {
     margin: 20px; }
-  .subtitulo--contacto {
+  .subtitulo--contacto, .titulo--contacto {
     font-size: 20px; }
   .titulo--contacto {
     font-size: 35px; }
