@@ -8,7 +8,8 @@ body {
   height: 100vh;
   background: linear-gradient(to right, #d53369, #be2a04); }
 
-/*grid-container va a ser el contenedor de todo el html con sus etiquetas semanticas adentro*/
+/*general*/
+/*map-get*/
 .grid-container {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -17,10 +18,6 @@ body {
   height: 100%;
   width: 100%; }
 
-/*general*/
-/*variables*/
-/*secciones del index*/
-/*header*/
 .cabecera {
   grid-area: header;
   background-color: #000;
@@ -42,13 +39,6 @@ body {
   align-items: center;
   height: 100%; }
 
-.titulos__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap; }
-
 .nav__link--logo {
   padding: 10px;
   margin-right: 30px;
@@ -58,20 +48,19 @@ body {
   background: linear-gradient(to right, #af0206, #761161); }
 
 /*nombre del gym*/
-/*padre*/
 .fitnessclub {
   color: #fff;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Rajdhani";
   text-transform: uppercase;
   font-size: 60px;
   text-decoration: none;
-  font-weight: bold;
-  /*hijo*/ }
+  font-weight: bold; }
   .fitnessclub span {
     color: #af0e2f;
     animation-name: spanTitulo;
     animation-duration: 2s;
-    animation-iteration-count: infinite; }
+    animation-iteration-count: infinite;
+    /*cambia constantemente los colores del nombre del gimnasio*/ }
 
 @keyframes spanTitulo {
   0% {
@@ -83,7 +72,6 @@ body {
   .fitnessclub:hover {
     color: #fff; }
 
-/*cambia constantemente los colores del nombre del gimnasio*/
 .navbar-collapse {
   flex-grow: 0; }
 
@@ -92,7 +80,7 @@ body {
   padding-right: 30px;
   font-size: 2rem;
   color: #fff;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Rajdhani";
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
@@ -108,7 +96,6 @@ body {
   background-image: url("../assets/img/Index/imgfondo.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: solid 4px #af0e2f;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -122,12 +109,10 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
-  width: 100%;
-  /*hijo*/
-  /*hijo*/ }
+  width: 100%; }
   .contenedor__section h1, .contenedor__section h2 {
     font-size: 90px;
-    font-family: "Bebas Neue", cursive;
+    font-family: "Bebas Neue";
     letter-spacing: 12px;
     text-shadow: 2px 2px #af0e2f;
     color: #000;
@@ -144,7 +129,7 @@ body {
   font-size: 30px;
   background-color: #af0e2f;
   text-transform: uppercase;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani";
   letter-spacing: 4px;
   padding: 30px;
   transition: all 0.5s;
@@ -186,7 +171,10 @@ body {
 
 /*termina main del index*/
 /*footer*/
-/*padre*/
+footer {
+  border-top: solid 4px #af0e2f;
+  padding: 20px; }
+
 .container__footer {
   grid-area: footer;
   background-color: #000;
@@ -195,18 +183,15 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
-  /*hijo*/ }
+  flex-wrap: wrap; }
   .container__footer div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    /*hijo*/
-    /*hijo*/ }
+    flex-wrap: wrap; }
     .container__footer div .container__footer--derechos, .container__footer div .email, .container__footer div .tel {
-      font-family: "Montserrat", sans-serif;
+      font-family: "Montserrat";
       font-weight: bold; }
     .container__footer div .email, .container__footer div .tel {
       font-weight: bold; }
@@ -313,3 +298,763 @@ body {
     display: flex;
     width: 100%;
     justify-content: center; } }
+
+.grid-actividades {
+  display: grid;
+  grid-template-areas: "header" "section1" "section2" "footer"; }
+
+/*SECCION UNO DEL MAIN*/
+.section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  grid-area: section1; }
+
+.primera__section__acti {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap; }
+  .primera__section__acti h1, .primera__section__acti .contenedor__section h2, .contenedor__section .primera__section__acti h2 {
+    font-size: 50px;
+    font-family: "Fjalla One";
+    letter-spacing: 12px;
+    color: #000;
+    text-shadow: 2px 2px #fff;
+    font-weight: bold;
+    padding: 20px; }
+  .primera__section__acti ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+    .primera__section__acti ul li {
+      font-size: 25px;
+      list-style: circle;
+      font-family: "Rajdhani";
+      color: #fff;
+      padding: 5px;
+      margin: 7px; }
+
+.container--carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60%; }
+  .container--carousel .galeria {
+    width: 90%;
+    border: 2px solid #000; }
+
+/*SECCION 2 DEL MAIN*/
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-area: section2; }
+
+.section2__div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .section2__div h2 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 12px;
+    font-family: "Fjalla One";
+    color: #000;
+    text-shadow: 2px 1px #fff;
+    text-align: center; }
+  .section2__div h3, .section2__div .card h4, .card .section2__div h4, .section2__div .card h5, .card .section2__div h5 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Fjalla One";
+    text-transform: uppercase;
+    color: #000;
+    text-shadow: 1px 1px #fff;
+    text-align: center; }
+
+.section2__div--boton {
+  font-size: 30px;
+  background-color: #000;
+  color: #fff;
+  border: solid 3px #fff;
+  text-transform: uppercase;
+  font-family: "Rajdhani";
+  padding: 30px;
+  transition: all 0.5s; }
+  .section2__div--boton:hover {
+    transform: scale(1.2);
+    color: #af0e2f;
+    font-weight: bold; }
+
+#video {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px; }
+  #video video {
+    width: 90%;
+    border: 3px solid #000; }
+
+#p {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  #p p {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 12px;
+    font-family: "Bebas Neue";
+    font-style: oblique;
+    text-shadow: 2px 4px #fff;
+    color: #000; }
+
+/*media queries de actividades*/
+@media screen and (max-width: 1300px) {
+  .primera__section__acti h1, .primera__section__acti .contenedor__section h2, .contenedor__section .primera__section__acti h2 {
+    font-size: 40px; }
+  .primera__section__acti ul li {
+    font-size: 22px; }
+  .section2__div h2 {
+    font-size: 45px; }
+  #p p {
+    font-size: 55px;
+    text-shadow: 2px 1px #fff; }
+  .section2__div--boton {
+    font-size: 25px;
+    padding: 25px; } }
+
+@media screen and (max-width: 1000px) {
+  .section2__div h2 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 900px) {
+  .primera__section__acti h1, .primera__section__acti .contenedor__section h2, .contenedor__section .primera__section__acti h2 {
+    font-size: 30px; }
+  .section2__div h2 {
+    font-size: 30px; }
+  .section2__div h3, .section2__div .card h4, .card .section2__div h4, .section2__div .card h5, .card .section2__div h5 {
+    font-size: 25px; }
+  .section2__div--boton {
+    font-size: 20px;
+    padding: 20px; }
+  #p p {
+    font-size: 40px;
+    text-shadow: 2px 1px #fff; } }
+
+@media screen and (max-width: 750px) {
+  .section1 {
+    display: block; }
+  .primera__section__acti {
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+  .container--carousel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+  .galeria {
+    width: 80%;
+    border: 2px solid #000; } }
+
+@media screen and (max-width: 700px) {
+  .primera__section__acti h1, .primera__section__acti .contenedor__section h2, .contenedor__section .primera__section__acti h2 {
+    font-size: 25px;
+    text-shadow: 1px 1px #fff; }
+  .primera__section__acti ul li {
+    font-size: 18px; }
+  .section2__div h2 {
+    font-size: 28px;
+    text-shadow: 1px 1px #fff;
+    letter-spacing: 9px; }
+  .section2__div h3, .section2__div .card h4, .card .section2__div h4, .section2__div .card h5, .card .section2__div h5 {
+    font-size: 24px;
+    text-shadow: 1px 1px #fff; }
+  .section2__div--boton {
+    font-size: 20px; }
+  #p p {
+    font-size: 28px;
+    text-shadow: 1px 1px #fff;
+    font-style: normal;
+    letter-spacing: 9px; } }
+
+@media screen and (max-width: 500px) {
+  .primera__section__acti h1, .primera__section__acti .contenedor__section h2, .contenedor__section .primera__section__acti h2 {
+    font-size: 22px; }
+  .primera__section__acti ul li {
+    font-size: 15px; }
+  .section2__div h2 {
+    font-size: 26px; }
+  .section2__div h3, .section2__div .card h4, .card .section2__div h4, .section2__div .card h5, .card .section2__div h5 {
+    font-size: 20px; }
+  .section2__div--boton {
+    font-size: 18px;
+    padding: 18px; }
+  #video {
+    width: 100%; }
+  #p {
+    width: 100%; }
+    #p p {
+      font-size: 40px;
+      margin: 40px;
+      margin-bottom: 0px; } }
+
+@media screen and (max-width: 380px) {
+  .primera__section__acti h1, .primera__section__acti .contenedor__section h2, .contenedor__section .primera__section__acti h2 {
+    font-size: 26px; }
+  .primera__section__acti ul li {
+    font-size: 18px; }
+  .section2__div h2 {
+    font-size: 24px; }
+  .section2__div h3, .section2__div .card h4, .card .section2__div h4, .section2__div .card h5, .card .section2__div h5 {
+    font-size: 20px; } }
+
+/*termina actividades*/
+/*seccion sedes*/
+.grid-sedes {
+  grid-template-areas: "header"  "section"  "article"  "footer"; }
+
+.titulo--sedes {
+  text-align: center;
+  margin: 40px 0;
+  font-family: "Fjalla One";
+  text-transform: uppercase;
+  font-size: 70px;
+  letter-spacing: 5px;
+  color: #000;
+  text-shadow: 2px 1px #fff; }
+
+.sec {
+  grid-area: section;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.card {
+  width: 400px;
+  height: 300px;
+  margin: 50px 40px;
+  background-size: contain;
+  background-image: linear-gradient(to bottom, #321b5f, #87021f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  animation-name: bordesColoridos;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes bordesColoridos {
+  0% {
+    border: 4px solid #000; }
+  25% {
+    border: 4px solid #460000; }
+  50% {
+    border: 4px solid #6f0101; }
+  75% {
+    border: 4px solid #460000; }
+  100% {
+    border: 4px solid #000000; } }
+  .card:hover {
+    background: linear-gradient(to bottom, #322056, #89243a); }
+  .card h3, .card h4, .card h5 {
+    font-family: "Oswald";
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 40px; }
+  .card h4 {
+    font-size: 30px; }
+  .card h5 {
+    font-size: 20px; }
+
+article {
+  grid-area: article; }
+  article h2 {
+    font-size: 50px;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    color: #000;
+    text-shadow: 2px 1px #fff;
+    text-align: center;
+    margin: 50px 0; }
+
+.article__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+#img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px; }
+  #img img {
+    width: 80%; }
+
+#parrafo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  #parrafo p {
+    font-size: 2rem;
+    width: 90%;
+    font-family: "Gill Sans";
+    font-style: italic;
+    color: #fff;
+    border: 2px solid #000;
+    background-color: #000;
+    padding: 30px; }
+
+/*media queries de sedes*/
+@media screen and (max-width: 1340px) {
+  .titulo--sedes {
+    font-size: 50px; }
+  .card {
+    width: 300px;
+    height: 200px; }
+    .card h3, .card h4, .card h5 {
+      font-size: 35px;
+      margin: 10px 0; }
+    .card h4 {
+      font-size: 20px;
+      margin: 10px 0; }
+    .card h5 {
+      font-size: 15px;
+      margin: 10px 0; }
+  article h2 {
+    font-size: 40px; }
+  #parrafo p {
+    font-size: 1.8rem; }
+  .fa-brands {
+    font-size: 70px; } }
+
+@media screen and (max-width: 1128px) {
+  .card {
+    width: 280px;
+    height: 180px; }
+    .card h3, .card h4, .card h5 {
+      font-size: 30px;
+      margin: 5px 0; }
+    .card h4 {
+      font-size: 15px;
+      margin: 5px 0; }
+    .card h5 {
+      font-size: 10px;
+      margin: 5px 0; } }
+
+@media screen and (max-width: 1000px) {
+  .titulo--sedes {
+    font-size: 40px; }
+  #parrafo p {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 900px) {
+  .titulo--sedes {
+    font-size: 35px;
+    text-shadow: 1px 1px #fff; }
+  .card {
+    width: 280px;
+    height: 180px; }
+    .card h3, .card h4, .card h5 {
+      font-size: 30px;
+      margin: 5px 0; }
+    .card h4 {
+      font-size: 15px;
+      margin: 5px 0; }
+    .card h5 {
+      font-size: 10px;
+      margin: 5px 0; }
+  #parrafo p {
+    font-size: 1.4rem; }
+  article h2 {
+    margin: 30px 0; } }
+
+@media screen and (max-width: 700px) {
+  .titulo--sedes {
+    font-size: 30px;
+    margin: 30px 0px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #fff; }
+  .card {
+    width: 220px;
+    height: 150px; }
+    .card h3, .card h4, .card h5 {
+      font-size: 25px; }
+  article h2 {
+    font-size: 30px; }
+  #parrafo p {
+    font-size: 1.2rem;
+    padding: 20px; } }
+
+@media screen and (max-width: 520px) {
+  .titulo--sedes {
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-shadow: 1px 0.5px #fff; }
+  .card {
+    width: 230px;
+    height: 130px; }
+    .card h3, .card h4, .card h5 {
+      font-size: 20px; }
+  #parrafo p {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 380px) {
+  .titulo--sedes {
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-shadow: 1px 0.2px #fff; }
+  .card {
+    width: 230px;
+    height: 160px;
+    margin: 40px; }
+    .card h3, .card h4, .card h5 {
+      font-size: 25px; }
+    .card h4 {
+      font-size: 15px; }
+    .card h5 {
+      font-size: 10px; }
+  article h2 {
+    font-size: 25px; }
+  #parrafo p {
+    font-size: 0.7rem; } }
+
+/*seccion nosotros*/
+/*hace zoom y cambia de color de fondo*/
+/*media queries de nosotros*/
+/*vista tablet seccion nosotros*/
+/*vista mobile seccion nosotros*/
+/*termina seccion Sedes*/
+.grid-nosotros {
+  grid-template-areas: "header" "main"  "footer"; }
+
+.main--titulo {
+  text-align: center;
+  margin: 40px 0;
+  font-family: "Fjalla One";
+  text-shadow: 2px 1px #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 5px;
+  color: #000; }
+
+.contenedor--nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.div__entrenadores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 26rem;
+  height: 33rem;
+  border: 2px solid #fff;
+  background-image: linear-gradient(to bottom, #af0e2f, #0a0a0a);
+  margin: 30px;
+  transition: all .2s; }
+  .div__entrenadores:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(to bottom, #af374f, #0a0a0a); }
+  .div__entrenadores img {
+    width: 18rem;
+    height: 18rem;
+    margin-top: 20px; }
+  .div__entrenadores h3, .div__entrenadores .card h4, .card .div__entrenadores h4, .div__entrenadores .card h5, .card .div__entrenadores h5 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    margin: 10px 0;
+    color: #fff; }
+  .div__entrenadores p {
+    font-size: 20px;
+    font-family: "Fjalla One";
+    color: #fff;
+    padding: 20px;
+    text-align: center; }
+
+@media screen and (max-width: 1340px) {
+  .main--titulo {
+    font-size: 50px; }
+  .div__entrenadores {
+    width: 22rem;
+    height: 29rem; }
+    .div__entrenadores img {
+      width: 14rem;
+      height: 14rem;
+      margin-top: 16px; } }
+
+@media screen and (max-width: 900px) {
+  .main--titulo {
+    font-size: 40px; }
+  .div__entrenadores {
+    width: 19rem;
+    height: 26rem; }
+    .div__entrenadores img {
+      width: 11rem;
+      height: 11rem;
+      margin-top: 13px; }
+    .div__entrenadores h3, .div__entrenadores .card h4, .card .div__entrenadores h4, .div__entrenadores .card h5, .card .div__entrenadores h5 {
+      font-size: 22px; }
+    .div__entrenadores p {
+      font-size: 16px; } }
+
+@media screen and (max-width: 700px) {
+  .main--titulo {
+    font-size: 30px; }
+  .div__entrenadores {
+    width: 16rem;
+    height: 23rem; }
+    .div__entrenadores img {
+      width: 10rem;
+      height: 10rem;
+      margin-top: 10px; }
+    .div__entrenadores h3, .div__entrenadores .card h4, .card .div__entrenadores h4, .div__entrenadores .card h5, .card .div__entrenadores h5 {
+      font-size: 20px; }
+    .div__entrenadores p {
+      font-size: 14px; } }
+
+@media screen and (max-width: 420px) {
+  .div__entrenadores {
+    width: 14rem;
+    height: 21rem; }
+    .div__entrenadores img {
+      width: 8rem;
+      height: 8rem;
+      margin-top: 8px; }
+    .div__entrenadores h3, .div__entrenadores .card h4, .card .div__entrenadores h4, .div__entrenadores .card h5, .card .div__entrenadores h5 {
+      font-size: 18px; }
+    .div__entrenadores p {
+      font-size: 13px; } }
+
+@media screen and (max-width: 380px) {
+  .main--titulo {
+    font-size: 24px; } }
+
+/*MAIN*/
+/*footer*/
+.grid-contacto {
+  display: grid;
+  grid-template-areas: "header" "main" "footer"; }
+
+.main__contacto {
+  grid-area: main; }
+
+.titulo--contacto {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 12px;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 1px 1px #ffffff;
+  color: #000000;
+  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 90px; }
+
+.subtitulo--contacto {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 12px;
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 1px 1px #ffffff;
+  color: #000000;
+  margin-top: 20px; }
+
+form {
+  background: #e28686;
+  border: solid 4px #000;
+  border-radius: 0.5%;
+  padding: 30px;
+  margin: 30px 100px; }
+  form div {
+    margin: 10px 0; }
+
+.contacto__input {
+  padding: 15px;
+  font-size: 1.3rem;
+  border-left: #89243a solid 4px; }
+  .contacto__input:hover {
+    background-color: #e0e0e0; }
+
+.checkbox {
+  font-size: 1.3rem;
+  color: #000; }
+
+.label--sede {
+  font-size: 1.3rem;
+  color: #000; }
+
+.boton__checkbox {
+  margin-left: 10px; }
+
+.contacto__botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.boton {
+  padding: 15px;
+  margin: 0px 20px;
+  width: 20%;
+  font-size: 1.3rem;
+  background-color: #87021f;
+  color: #fff;
+  border: none; }
+  .boton:hover {
+    background-color: #b3304a; }
+  .boton:active {
+    background: #87021f;
+    background: #87021f;
+    border-color: none;
+    border-color: none;
+    color: #fff;
+    color: #fff;
+    outline: 0;
+    outline: 0;
+    box-shadow: 0;
+    box-shadow: 0; }
+  .boton:focus {
+    background: #87021f;
+    border-color: none;
+    color: #fff;
+    outline: 0;
+    box-shadow: 0; }
+
+textarea {
+  height: 250px;
+  resize: none; }
+
+.footer--contacto {
+  border-top: 4px solid #af0e2f;
+  padding: 20px;
+  grid-area: footer; }
+
+@media screen and (max-width: 1290px) {
+  .titulo--contacto {
+    font-size: 40px;
+    letter-spacing: 8px;
+    font-size: 70px; }
+  .subtitulo--contacto {
+    font-size: 40px;
+    letter-spacing: 8px; } }
+
+@media screen and (max-width: 786px) {
+  .boton {
+    padding: 10px;
+    width: 25%;
+    font-size: 1rem; } }
+
+@media screen and (max-width: 700px) {
+  .titulo--contacto {
+    font-size: 35px;
+    margin: 20px 15px;
+    margin: 10px 0;
+    font-size: 55px; }
+  .subtitulo--contacto {
+    font-size: 35px;
+    margin: 20px 15px; }
+  .contacto__input {
+    font-size: 1rem; }
+  .main__contacto {
+    width: 100vw; }
+  .checkbox {
+    font-size: 1.1rem; }
+  .label--sede {
+    font-size: 1.1rem; } }
+
+@media screen and (max-width: 570px) {
+  .titulo--contacto {
+    margin: 10px 15px;
+    font-size: 30px;
+    font-size: 50px; }
+  .subtitulo--contacto {
+    margin: 10px 15px;
+    font-size: 30px; }
+  form {
+    margin: 30px 70px; }
+  .contacto__input {
+    padding: 10px;
+    font-size: 0.9rem; }
+  .checkbox {
+    font-size: 1rem; }
+  .label--sede {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 480px) {
+  .titulo--contacto {
+    margin: 10px 15px;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-size: 45px; }
+  .subtitulo--contacto {
+    margin: 10px 15px;
+    font-size: 30px;
+    letter-spacing: 6px; }
+  form {
+    margin: 30px 50px; }
+  .boton {
+    width: 30%; } }
+
+@media screen and (max-width: 436px) {
+  .titulo--contacto {
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-size: 40px; }
+  .subtitulo--contacto {
+    font-size: 25px;
+    letter-spacing: 4px; } }
+
+@media screen and (max-width: 380px) {
+  form {
+    margin: 30px 30px; }
+  .boton {
+    width: 30%;
+    margin: 0px 15px; } }
+
+@media screen and (max-width: 320px) {
+  form {
+    margin: 20px; }
+  .subtitulo--contacto {
+    font-size: 20px; }
+  .titulo--contacto {
+    font-size: 35px; }
+  .boton {
+    width: 40%; } }
