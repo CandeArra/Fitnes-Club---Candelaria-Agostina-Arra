@@ -27,14 +27,14 @@
 	width: 26rem;
 	height: 33rem;
 	border: 2px solid map-get($colores,blanco);
-	background-image: linear-gradient(to bottom, map-get($colores,rosaV3),map-get($colores,negroClaro));
+	background-image: linear-gradient(to bottom, map-get($colores,rosaV3),map-get($colores,negroV2));
 	margin: 30px;
 	transition: all .2s;
 
 	/*hace zoom y cambia de color de fondo*/
 	&:hover {
 		transform: scale(1.1);
-		background-image: linear-gradient(to bottom, map-get($colores,rosaV2), map-get($colores,negroClaro));
+		background-image: linear-gradient(to bottom, map-get($colores,rosaV2), map-get($colores,negroV2));
 	}
 
 	img {
@@ -65,6 +65,7 @@
 	.main--titulo {
 		font-size: 50px;
 	}
+
 	.div__entrenadores {
 		width: 22rem;
 		height: 29rem;
@@ -80,6 +81,7 @@
 	.main--titulo {
 		font-size: 40px;
 	}
+
 	.div__entrenadores {
 		width: 19rem;
 		height: 26rem;
@@ -96,10 +98,12 @@
 		}
 	}
 }
+
 @media screen and (max-width: 700px) {
 	.main--titulo {
 		font-size: 30px;
 	}
+
 	.div__entrenadores {
 		width: 16rem;
 		height: 23rem;
@@ -116,8 +120,8 @@
 		}
 	}
 }
-@media screen and (max-width: 420px) {
 
+@media screen and (max-width: 420px) {
 	.div__entrenadores {
 		width: 14rem;
 		height: 21rem;
@@ -136,7 +140,6 @@
 }
 
 @media screen and (max-width: 380px) {
-
 	.main--titulo {
 		font-size: 24px;
 	}

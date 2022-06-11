@@ -8,10 +8,7 @@
 
 .section__contacto {
 	grid-area: main;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	@include flexbox(row,center,center,nowrap);
 	width: 100%;
 }
 
@@ -31,7 +28,6 @@
 	font-size: 90px;
 }
 
-
 form {
 	width: 90%;
 	background:  map-get($colores,rosav1);
@@ -40,27 +36,29 @@ form {
 	padding: 30px;
 	margin: 30px;
 
-
 	div {
 		margin: 10px 0;
 	}
 }
+
 .contacto__input {
 	padding: 15px;
 	font-size: 1.3rem;
-	border-left: map-get($colores,bordo) solid 4px;
+	border-left:solid 4px map-get($colores,bordo);
 	&:hover {
 		background-color: map-get($colores,gris);
 	}
 }
+
 .checkbox {
 	font-size: 1.3rem;
 	color:map-get($colores,negro);
 }
+
 .label--sede {
-	font-size: 1.3rem;
-	color:map-get($colores,negro);
+	@extend .checkbox;
 }
+
 .boton__checkbox {
 	margin-left: 10px;
 }
@@ -73,7 +71,7 @@ form {
 		margin: 0px 20px;
 		width: 20%;
 		font-size: 1.3rem;
-		background-color: map-get($colores,bordoFuerte);
+		background-color: map-get($colores,bordoV2);
 		color: map-get($colores,blanco);
 		border: none;
 
@@ -115,7 +113,6 @@ textarea {
 }
 
 @media screen and (max-width:700px){
-
 	.subtitulo--contacto {
 		font-size: 35px;
 	}
@@ -131,7 +128,6 @@ textarea {
  	.checkbox,.label--sede {
 		font-size: 1.1rem;
  	}
-
 }
 
 @media screen and (max-width:560px){
@@ -166,7 +162,6 @@ textarea {
 
 
 @media screen and (max-width:430px){
-
 	.subtitulo--contacto {
 		font-size: 28px;
 	}
@@ -191,7 +186,6 @@ textarea {
 }
 
 @media screen and (max-width:350px){
-
 	.subtitulo--contacto {
 		font-size: 26px;
 	}
@@ -211,59 +205,10 @@ textarea {
 		   width:30%;
 	   }
    }
-
 }
 
 @media screen and (max-width:320px){
-
 	.titulo--contacto {
 		font-size: 35px; 
    	}
 }
-
-
-
-
-// @media screen and (max-width:715px){
-// 	.subtitulo--contacto {
-// 		font-size: 30px;
-// 	}
-	
-// 	.titulo--contacto {
-// 		font-size: 60px;
-// 	}
-
-// 	.contacto__input {
-// 		font-size: 1.2rem;
-// 	}
-
-// 	.checkbox,.label--sede {
-// 		font-size: 1.2rem;
-// 		color:map-get($colores,negro);
-// 	}
-
-// 	.contacto__botones {
-// 		@include flexbox (row,center,center,nowrap);
-	
-// 		input{
-// 			padding: 12px;
-// 			width: 25%;
-// 			font-size: 1.2rem;
-// 		}
-// 	}
-
-// 	form{
-// 		margin: 30px 80px;
-
-// 	}
-
-
-// @media screen and (max-width:650px){
-// 	form{
-// 		margin: 30px 60px;
-
-// 	}
-
-
-
-

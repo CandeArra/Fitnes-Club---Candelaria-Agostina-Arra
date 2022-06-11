@@ -81,8 +81,10 @@ li {
   margin: 15px; }
   li a {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: nowrap; }
     li a i {
       color: #fff;
       font-size: 25px;
@@ -451,6 +453,7 @@ footer {
   transition: all 0.5s; }
   .section2__div--boton:hover {
     transform: scale(1.2);
+    color: #af0e2f;
     font-weight: bold; }
 
 #video {
@@ -523,10 +526,12 @@ footer {
     width: 100%;
     justify-content: center; }
   .container--carousel {
-    display: flex;
     width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: nowrap; }
   .galeria {
     width: 80%;
     border: 2px solid #000; } }
@@ -631,7 +636,7 @@ footer {
   75% {
     border: 4px solid #460000; }
   100% {
-    border: 4px solid #000000; } }
+    border: 4px solid #000; } }
   .card:hover {
     background: linear-gradient(to bottom, #322056, #89243a); }
   .card h3, .card h4, .card h5 {
@@ -672,7 +677,8 @@ article {
   margin-bottom: 30px;
   width: 50%; }
   #img img {
-    width: 80%; }
+    width: 80%;
+    border: 2px solid #000; }
 
 #parrafo {
   display: flex;
@@ -757,7 +763,7 @@ article {
     .card h5 {
       font-size: 18px; }
   #parrafo p {
-    font-size: 1rem; } }
+    font-size: 1.1rem; } }
 
 @media screen and (max-width: 380px) {
   .titulo--sedes {
@@ -777,7 +783,7 @@ article {
   article h2 {
     font-size: 25px; }
   #parrafo p {
-    font-size: 0.7rem; } }
+    font-size: 1rem; } }
 
 /*seccion nosotros*/
 .grid-nosotros {
@@ -900,9 +906,10 @@ article {
 .section__contacto {
   grid-area: main;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 100%; }
 
 .subtitulo--contacto, .titulo--contacto {
@@ -931,15 +938,11 @@ form {
 .contacto__input {
   padding: 15px;
   font-size: 1.3rem;
-  border-left: #89243a solid 4px; }
+  border-left: solid 4px #89243a; }
   .contacto__input:hover {
     background-color: #e0e0e0; }
 
-.checkbox {
-  font-size: 1.3rem;
-  color: #000; }
-
-.label--sede {
+.checkbox, .label--sede {
   font-size: 1.3rem;
   color: #000; }
 
@@ -974,7 +977,7 @@ textarea {
     font-size: 70px; }
   .contacto__input {
     font-size: 1.2rem; }
-  .checkbox, .label--sede {
+  .checkbox, .label--sede, .label--sede {
     font-size: 1.2rem; }
   .contacto__botones input {
     padding: 12px;
@@ -988,7 +991,7 @@ textarea {
     font-size: 60px; }
   .contacto__input {
     font-size: 1.1rem; }
-  .checkbox, .label--sede {
+  .checkbox, .label--sede, .label--sede {
     font-size: 1.1rem; } }
 
 @media screen and (max-width: 560px) {
@@ -999,7 +1002,7 @@ textarea {
     font-size: 50px; }
   .contacto__input {
     font-size: 1rem; }
-  .checkbox, .label--sede {
+  .checkbox, .label--sede, .label--sede {
     font-size: 1rem; }
   .contacto__botones input {
     padding: 10px;
@@ -1027,7 +1030,7 @@ textarea {
   .titulo--contacto {
     font-size: 40px;
     letter-spacing: 4px; }
-  .checkbox, .label--sede {
+  .checkbox, .label--sede, .label--sede {
     font-size: 0.9rem; }
   .contacto__botones input {
     font-size: 0.9rem;

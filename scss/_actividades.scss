@@ -92,7 +92,7 @@
     transition: all 0.5s;
     &:hover {
         transform: scale(1.2);
-        color: map-get($colores,rosaFuerte);
+        color: map-get($colores,rosaV3);
         font-weight: bold;
     }
 }
@@ -126,7 +126,6 @@
 
 /*media queries de actividades*/
 @media screen and (max-width: 1300px) {
-
 	.primera__section__acti {
 		h1 {
 			font-size: 40px;
@@ -208,15 +207,13 @@
 	}
 
 	.container--carousel {
-		display: flex;
 		width: 100%;
-		justify-content: center;
-		align-items: center;
+		@include flexbox(row,center,center,nowrap);
 	}
 
 	.galeria {
 		width: 80%;
-		border: 2px solid  map-get($colores,negro);
+		border: 2px solid map-get($colores,negro);
 	}
 }
 

@@ -39,7 +39,7 @@
 	width: 105px;
 	border: solid 3px map-get($colores,blanco);
 	border-radius: 50%;
-	background: linear-gradient(to right, #af0206, #761161);
+	background: linear-gradient(to right,map-get($colores,rojo),map-get($colores,violeta));
 }
 
 /*nombre del gym*/
@@ -64,7 +64,7 @@
 				color: map-get($colores,rosaV3);
 			}
 			50% {
-				color: #761161;
+				color: map-get($colores,violeta);
 			}
 			100% {
 				color: map-get($colores,rosaV3);
@@ -81,7 +81,6 @@
 	flex-grow: 0;
 }
 
-
 .contact {
     margin-right: 15px;
 }
@@ -89,9 +88,7 @@
 li {
     margin: 15px;
     a{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(row,center,center,nowrap);
         i{
             color: map-get($colores,blanco);
             font-size: 25px;
@@ -101,7 +98,6 @@ li {
 }
 
 .ul__container__a {
-
 	font-size: 1.8rem;
 	color: map-get($colores,blanco);
 	font-family: map-get($textos,texto1);
@@ -218,12 +214,11 @@ footer {
 	color:map-get($colores,blanco);
     @include flexbox(row,space-evenly,center,wrap);
 
-    
 	div {
         @include flexbox(column,center,center,wrap);
 
         .container__footer--derechos {
-            font-family:map-get($textos, texto2);
+            font-family:map-get($textos,texto2);
             font-weight: bold;
         }
 
@@ -234,9 +229,9 @@ footer {
     }
 }
 /*termina footer del index*/
+
+
 @media screen and (max-width: 1600px) {
-
-
     .ul__container__a {
         font-size: 1.7rem;
     }
@@ -257,8 +252,8 @@ footer {
 
 }
 
-@media screen and (max-width: 1480px) {
 
+@media screen and (max-width: 1480px) {
     .nav__link--logo{
         width:95px;
     }
@@ -292,11 +287,9 @@ footer {
     .container__footer--derechos,.email,.tel {
         font-size: 17px;
     }
-
 }
 
 @media screen and (max-width: 1370px) {
-
     .fitnessclub{
         font-size:40px;
     }
@@ -311,11 +304,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 1290px) {
-    
+@media screen and (max-width: 1290px) { 
     .nav__link--logo{
         width:90px;
-        margin: 0px ;
+        margin: 0px;
     }
     
     li{
@@ -324,7 +316,6 @@ footer {
 
     .ul__container__a {
         font-size: 1.4rem;
-
     }
   
     .contenedor__section{
@@ -345,8 +336,8 @@ footer {
         font-size:60px !important;
     }
 }
-@media screen and (max-width: 1222px) {
 
+@media screen and (max-width: 1222px) {
     .ul__container__a {
         font-size: 1.3em;
     }
@@ -359,10 +350,9 @@ footer {
             }
         }
     }
-
 }
-@media screen and (max-width: 1166px) {
 
+@media screen and (max-width: 1166px) {
     .ul__container__a {
         font-size: 1.2em;
     }
@@ -385,7 +375,6 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
-
     .nav__link--logo{
         width:80px;
     }
@@ -399,11 +388,9 @@ footer {
 
     li {
         margin: 6px;
-
         a{
             i{
                 font-size:16px;
-
             }
         }
     }
@@ -447,7 +434,6 @@ footer {
     .container__footer--derechos,.email, .tel {
         font-size: 12px;
     }
-
 }
 
 /*vista de tablet*/
