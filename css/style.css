@@ -74,16 +74,28 @@ body {
 .navbar-collapse {
   flex-grow: 0; }
 
+.contact {
+  margin-right: 15px; }
+
+li {
+  margin: 15px; }
+  li a {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    li a i {
+      color: #fff;
+      font-size: 25px;
+      margin: 15px; }
+
 .ul__container__a {
-  margin: 10px;
-  padding-right: 30px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #fff;
   font-family: "Rajdhani";
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  text-shadow: 2px 2px #af0e2f; }
+  text-shadow: 3px 2px #af0e2f; }
   .ul__container__a:hover {
     color: #af0e2f;
     text-shadow: none; }
@@ -196,13 +208,21 @@ footer {
       font-weight: bold; }
 
 /*termina footer del index*/
+@media screen and (max-width: 1600px) {
+  .ul__container__a {
+    font-size: 1.7rem; }
+  .fitnessclub {
+    font-size: 50px; }
+  li a i {
+    font-size: 22px; } }
+
 @media screen and (max-width: 1480px) {
   .nav__link--logo {
     width: 95px; }
   .fitnessclub {
-    font-size: 50px; }
+    font-size: 45px; }
   .ul__container__a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #fff; }
   .contenedor__section {
     justify-content: flex-end; }
@@ -216,14 +236,23 @@ footer {
   .container__footer--derechos, .container__footer div .email, .container__footer div .tel, .email, .tel {
     font-size: 17px; } }
 
-@media screen and (max-width: 1270px) {
-  .nav__link--logo {
-    width: 90px; }
+@media screen and (max-width: 1370px) {
   .fitnessclub {
-    font-size: 45px; }
+    font-size: 40px; }
   .ul__container__a {
-    font-size: 1.6rem;
-    padding-right: 15px; }
+    font-size: 1.5rem;
+    color: #fff; }
+  li {
+    margin: 12px; } }
+
+@media screen and (max-width: 1290px) {
+  .nav__link--logo {
+    width: 90px;
+    margin: 0px; }
+  li {
+    margin: 10px; }
+  .ul__container__a {
+    font-size: 1.4rem; }
   .contenedor__section h1, .contenedor__section h2 {
     font-size: 75px; }
   .contenedor__section h2 {
@@ -233,19 +262,47 @@ footer {
   .fa-brands {
     font-size: 60px !important; } }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1222px) {
+  .ul__container__a {
+    font-size: 1.3em; }
+  li a i {
+    font-size: 20px; } }
+
+@media screen and (max-width: 1166px) {
+  .ul__container__a {
+    font-size: 1.2em; }
+  li {
+    margin: 8px; }
+    li a i {
+      font-size: 18px; } }
+
+@media screen and (max-width: 1100px) {
+  .fitnessclub {
+    font-size: 35px; } }
+
+@media screen and (max-width: 1080px) {
+  .nav__link--logo {
+    width: 80px; }
+  .fitnessclub {
+    font-size: 30px; }
+  .ul__container__a {
+    font-size: 1.2em; }
+  li {
+    margin: 6px; }
+    li a i {
+      font-size: 16px; } }
+
+@media screen and (max-width: 992px) {
   .contenedorNav {
     justify-content: center !important; } }
 
-@media screen and (max-width: 1116px) {
-  .nav__link--logo {
-    width: 90px;
-    margin: 0px; } }
+@media screen and (max-width: 990px) {
+  .fitnessclub {
+    font-size: 40px; }
+  .ul__container__a {
+    font-size: 1.6rem; } }
 
 @media screen and (max-width: 900px) {
-  .ul__container__a {
-    font-size: 1.6rem;
-    padding-right: 15px; }
   .contenedor__section h1, .contenedor__section h2 {
     font-size: 70px;
     padding: 10px; }
@@ -260,14 +317,12 @@ footer {
 
 /*vista de tablet*/
 @media screen and (max-width: 700px) {
-  .nav__link--logo {
-    width: 80px; }
   .contenedor__section h1, .contenedor__section h2 {
     font-size: 50px;
-    text-shadow: 1px 1px; }
+    text-shadow: 1px 1px #af0e2f; }
   .contenedor__section h2 {
     font-size: 35px;
-    text-shadow: 1px 1px; }
+    text-shadow: 1px 1px #af0e2f; }
   .contenedor__section__boton {
     font-size: 17px;
     padding: 17px; }
@@ -754,13 +809,13 @@ article {
   width: 26rem;
   height: 33rem;
   border: 2px solid #fff;
-  background-image: linear-gradient(to bottom, , );
+  background-image: linear-gradient(to bottom, #af0e2f, #0a0a0a);
   margin: 30px;
   transition: all .2s;
   /*hace zoom y cambia de color de fondo*/ }
   .div__entrenadores:hover {
     transform: scale(1.1);
-    background-image: linear-gradient(to bottom, , ); }
+    background-image: linear-gradient(to bottom, #af374f, #0a0a0a); }
   .div__entrenadores img {
     width: 18rem;
     height: 18rem;

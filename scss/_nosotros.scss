@@ -27,14 +27,14 @@
 	width: 26rem;
 	height: 33rem;
 	border: 2px solid map-get($colores,blanco);
-	background-image: linear-gradient(to bottom, map-get($colores,rosaFuerte),map-get($colores,color2));
+	background-image: linear-gradient(to bottom, map-get($colores,rosaV3),map-get($colores,negroClaro));
 	margin: 30px;
 	transition: all .2s;
 
 	/*hace zoom y cambia de color de fondo*/
 	&:hover {
 		transform: scale(1.1);
-		background-image: linear-gradient(to bottom, map-get($colores,color1), map-get($colores,color2));
+		background-image: linear-gradient(to bottom, map-get($colores,rosaV2), map-get($colores,negroClaro));
 	}
 
 	img {
