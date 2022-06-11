@@ -5,3 +5,10 @@
     align-items: $align-items;
     flex-wrap: $wrap;
 }
+
+@mixin text($text-transform,$text-decoration,$font-weight,$text-shadow) {
+    text-transform:$text-transform;
+    text-decoration:$text-decoration;
+    font-weight:$font-weight;
+    text-shadow:$text-shadow;
+}

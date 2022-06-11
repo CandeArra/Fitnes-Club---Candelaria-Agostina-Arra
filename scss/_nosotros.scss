@@ -7,13 +7,12 @@
 }
 
 .main--titulo {
-	text-align: center;
+	text-align:center;
 	margin: 40px 0;
 	font-family: map-get($textos,texto4);
-	text-shadow: 2px 1px map-get($colores,blanco);
-	text-transform: uppercase;
 	font-size: 60px;
 	letter-spacing: 5px;
+	@include text(uppercase,none,bold,2px 1px map-get($colores,blanco));
 	color: map-get($colores,negro);
 }
 
@@ -23,7 +22,6 @@
 
 .div__entrenadores {
 	@include flexbox(column,center,center,wrap);
-
 	width: 26rem;
 	height: 33rem;
 	border: 2px solid map-get($colores,blanco);

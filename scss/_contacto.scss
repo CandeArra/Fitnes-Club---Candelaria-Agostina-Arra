@@ -14,11 +14,10 @@
 
 .subtitulo--contacto {
 	font-size: 50px;
-	font-weight: bold;
+	@include text(none,none,bold,1px 1px map-get($colores,blanco));
 	text-align: center;
 	letter-spacing: 12px;
 	font-family: map-get($textos,texto3);
-	text-shadow: 1px 1px map-get($colores,blanco);
 	color:map-get($colores,negro);
 	margin: 20px;
 }
