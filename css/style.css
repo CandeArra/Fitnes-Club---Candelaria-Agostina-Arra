@@ -211,7 +211,8 @@ footer {
     flex-wrap: wrap; }
     .container__footer div .container__footer--derechos, .container__footer div .email, .container__footer div .tel {
       font-family: "Montserrat";
-      font-weight: bold; }
+      font-weight: bold;
+      margin: 0px 4px; }
 
 /*termina footer del index*/
 @media screen and (max-width: 1600px) {
@@ -840,14 +841,14 @@ article {
     transform: scale(1.1);
     background-image: linear-gradient(to bottom, #af374f, #0a0a0a); }
   .div__entrenadores img {
-    width: 18rem;
-    height: 18rem;
+    width: 70%;
+    height: 50%;
     margin-top: 20px; }
   .div__entrenadores h3, .div__entrenadores .card h4, .card .div__entrenadores h4, .div__entrenadores .card h5, .card .div__entrenadores h5 {
     font-size: 28px;
     text-transform: uppercase;
     font-family: "Oswald";
-    margin: 10px 0;
+    margin-top: 10px;
     color: #fff; }
   .div__entrenadores p {
     font-size: 20px;
@@ -862,11 +863,7 @@ article {
     font-size: 50px; }
   .div__entrenadores {
     width: 22rem;
-    height: 29rem; }
-    .div__entrenadores img {
-      width: 14rem;
-      height: 14rem;
-      margin-top: 16px; } }
+    height: 29rem; } }
 
 @media screen and (max-width: 900px) {
   .main--titulo {
@@ -874,10 +871,6 @@ article {
   .div__entrenadores {
     width: 19rem;
     height: 26rem; }
-    .div__entrenadores img {
-      width: 11rem;
-      height: 11rem;
-      margin-top: 13px; }
     .div__entrenadores h3, .div__entrenadores .card h4, .card .div__entrenadores h4, .div__entrenadores .card h5, .card .div__entrenadores h5 {
       font-size: 22px; }
     .div__entrenadores p {
@@ -889,10 +882,6 @@ article {
   .div__entrenadores {
     width: 16rem;
     height: 23rem; }
-    .div__entrenadores img {
-      width: 10rem;
-      height: 10rem;
-      margin-top: 10px; }
     .div__entrenadores h3, .div__entrenadores .card h4, .card .div__entrenadores h4, .div__entrenadores .card h5, .card .div__entrenadores h5 {
       font-size: 20px; }
     .div__entrenadores p {
@@ -902,14 +891,10 @@ article {
   .div__entrenadores {
     width: 14rem;
     height: 21rem; }
-    .div__entrenadores img {
-      width: 8rem;
-      height: 8rem;
-      margin-top: 8px; }
     .div__entrenadores h3, .div__entrenadores .card h4, .card .div__entrenadores h4, .div__entrenadores .card h5, .card .div__entrenadores h5 {
       font-size: 18px; }
     .div__entrenadores p {
-      font-size: 13px; } }
+      font-size: 11px; } }
 
 @media screen and (max-width: 380px) {
   .main--titulo {

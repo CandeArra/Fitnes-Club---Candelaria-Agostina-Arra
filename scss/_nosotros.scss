@@ -35,9 +35,10 @@
 		background-image: linear-gradient(to bottom, map-get($colores,rosaV2), map-get($colores,negroV2));
 	}
 
+
 	img {
-		width: 18rem;
-		height: 18rem;
+		width:70%;
+		height: 50%;
 		margin-top: 20px;
 	}
 
@@ -45,7 +46,7 @@
 		font-size: 28px;
 		text-transform: uppercase;
 		font-family: map-get($textos,texto5);
-		margin: 10px 0;
+		margin-top: 10px;
 		color: map-get($colores,blanco);
 	}
     
@@ -67,11 +68,7 @@
 	.div__entrenadores {
 		width: 22rem;
 		height: 29rem;
-		img {
-			width: 14rem;
-			height: 14rem;
-			margin-top: 16px;
-		}
+
 	}
 }
 
@@ -83,11 +80,7 @@
 	.div__entrenadores {
 		width: 19rem;
 		height: 26rem;
-		img {
-			width: 11rem;
-			height: 11rem;
-			margin-top: 13px;
-		}
+
 		h3 {
 			font-size: 22px;
 		}
@@ -105,11 +98,7 @@
 	.div__entrenadores {
 		width: 16rem;
 		height: 23rem;
-		img {
-			width: 10rem;
-			height: 10rem;
-			margin-top: 10px;
-		}
+
 		h3 {
 			font-size: 20px;
 		}
@@ -123,16 +112,12 @@
 	.div__entrenadores {
 		width: 14rem;
 		height: 21rem;
-		img {
-			width: 8rem;
-			height: 8rem;
-			margin-top: 8px;
-		}
+
 		h3 {
 			font-size: 18px;
 		}
 		p {
-			font-size: 13px;
+			font-size: 11px;
 		}
 	}
 }
